@@ -1,0 +1,81 @@
+Output/Debug/Obj/fer_biodaq_fusion_platform/app_usbd_hid_kbd.o: \
+ C:\Users\Dino\Desktop\BioDAQ\ Fusion\nRF5_SDK_17.1.0\components\libraries\usbd\class\hid\kbd\app_usbd_hid_kbd.c \
+ ../../../../nRF5_SDK_17.1.0/components/libraries/util/sdk_common.h \
+ C:/Program\ Files/SEGGER/SEGGER\ Embedded\ Studio\ for\ ARM\ 7.10/include/stdint.h \
+ C:/Program\ Files/SEGGER/SEGGER\ Embedded\ Studio\ for\ ARM\ 7.10/include/__SEGGER_RTL.h \
+ C:/Program\ Files/SEGGER/SEGGER\ Embedded\ Studio\ for\ ARM\ 7.10/include/__SEGGER_RTL_ConfDefaults.h \
+ C:/Program\ Files/SEGGER/SEGGER\ Embedded\ Studio\ for\ ARM\ 7.10/include/__SEGGER_RTL_Conf.h \
+ C:/Program\ Files/SEGGER/SEGGER\ Embedded\ Studio\ for\ ARM\ 7.10/include/__SEGGER_RTL_Arm_Conf.h \
+ C:/Program\ Files/SEGGER/SEGGER\ Embedded\ Studio\ for\ ARM\ 7.10/include/stdbool.h \
+ C:/Program\ Files/SEGGER/SEGGER\ Embedded\ Studio\ for\ ARM\ 7.10/include/string.h \
+ ../config/sdk_config.h ../config/app_config.h \
+ ../../../../nRF5_SDK_17.1.0/components/libraries/util/nordic_common.h \
+ ../../../../nRF5_SDK_17.1.0/modules/nrfx/mdk/compiler_abstraction.h \
+ ../../../../nRF5_SDK_17.1.0/components/libraries/util/sdk_os.h \
+ ../../../../nRF5_SDK_17.1.0/components/libraries/util/sdk_errors.h \
+ ../../../../nRF5_SDK_17.1.0/components/drivers_nrf/nrf_soc_nosd/nrf_error.h \
+ ../../../../nRF5_SDK_17.1.0/components/libraries/util/app_util.h \
+ C:/Program\ Files/SEGGER/SEGGER\ Embedded\ Studio\ for\ ARM\ 7.10/include/stddef.h \
+ ../../../../nRF5_SDK_17.1.0/modules/nrfx/mdk/nrf.h \
+ ../../../../nRF5_SDK_17.1.0/modules/nrfx/mdk/nrf52840.h \
+ ../../../../nRF5_SDK_17.1.0/components/toolchain/cmsis/include/core_cm4.h \
+ ../../../../nRF5_SDK_17.1.0/components/toolchain/cmsis/include/cmsis_version.h \
+ ../../../../nRF5_SDK_17.1.0/components/toolchain/cmsis/include/cmsis_compiler.h \
+ ../../../../nRF5_SDK_17.1.0/components/toolchain/cmsis/include/cmsis_gcc.h \
+ ../../../../nRF5_SDK_17.1.0/components/toolchain/cmsis/include/mpu_armv7.h \
+ ../../../../nRF5_SDK_17.1.0/modules/nrfx/mdk/system_nrf52840.h \
+ ../../../../nRF5_SDK_17.1.0/modules/nrfx/mdk/nrf52840_bitfields.h \
+ ../../../../nRF5_SDK_17.1.0/modules/nrfx/mdk/nrf51_to_nrf52840.h \
+ ../../../../nRF5_SDK_17.1.0/modules/nrfx/mdk/nrf52_to_nrf52840.h \
+ ../../../../nRF5_SDK_17.1.0/modules/nrfx/mdk/compiler_abstraction.h \
+ ../../../../nRF5_SDK_17.1.0/components/libraries/util/sdk_macros.h \
+ ../../../../nRF5_SDK_17.1.0/components/libraries/util/nrf_assert.h \
+ C:\Users\Dino\Desktop\BioDAQ\ Fusion\nRF5_SDK_17.1.0\components\libraries\usbd\class\hid\kbd\app_usbd_hid_kbd.h \
+ ../../../../nRF5_SDK_17.1.0/integration/nrfx/legacy/nrf_drv_usbd.h \
+ ../../../../nRF5_SDK_17.1.0/modules/nrfx/nrfx.h \
+ ../../../../nRF5_SDK_17.1.0/integration/nrfx/nrfx_config.h \
+ ../../../../nRF5_SDK_17.1.0/modules/nrfx/drivers/nrfx_common.h \
+ ../../../../nRF5_SDK_17.1.0/modules/nrfx/mdk/nrf_peripherals.h \
+ ../../../../nRF5_SDK_17.1.0/modules/nrfx/mdk/nrf52840_peripherals.h \
+ ../../../../nRF5_SDK_17.1.0/integration/nrfx/nrfx_glue.h \
+ ../../../../nRF5_SDK_17.1.0/integration/nrfx/legacy/apply_old_config.h \
+ ../../../../nRF5_SDK_17.1.0/modules/nrfx/soc/nrfx_irqs.h \
+ ../../../../nRF5_SDK_17.1.0/modules/nrfx/soc/nrfx_irqs_nrf52840.h \
+ ../../../../nRF5_SDK_17.1.0/components/libraries/util/nrf_assert.h \
+ ../../../../nRF5_SDK_17.1.0/components/libraries/util/app_util.h \
+ ../../../../nRF5_SDK_17.1.0/components/libraries/util/nordic_common.h \
+ ../../../../nRF5_SDK_17.1.0/components/libraries/util/app_util_platform.h \
+ ../../../../nRF5_SDK_17.1.0/components/libraries/util/app_error.h \
+ C:/Program\ Files/SEGGER/SEGGER\ Embedded\ Studio\ for\ ARM\ 7.10/include/stdio.h \
+ ../../../../nRF5_SDK_17.1.0/components/libraries/util/app_error_weak.h \
+ ../../../../nRF5_SDK_17.1.0/modules/nrfx/soc/nrfx_coredep.h \
+ ../../../../nRF5_SDK_17.1.0/modules/nrfx/soc/nrfx_atomic.h \
+ ../../../../nRF5_SDK_17.1.0/components/libraries/util/sdk_errors.h \
+ ../../../../nRF5_SDK_17.1.0/components/libraries/util/sdk_resources.h \
+ ../../../../nRF5_SDK_17.1.0/modules/nrfx/drivers/nrfx_errors.h \
+ ../../../../nRF5_SDK_17.1.0/modules/nrfx/drivers/include/nrfx_usbd.h \
+ ../../../../nRF5_SDK_17.1.0/modules/nrfx/hal/nrf_usbd.h \
+ ../../../../nRF5_SDK_17.1.0/integration/nrfx/legacy/nrf_drv_usbd_errata.h \
+ ../../../../nRF5_SDK_17.1.0/modules/nrfx/drivers/include/../src/nrfx_usbd_errata.h \
+ ../../../../nRF5_SDK_17.1.0/modules/nrfx/mdk/nrf_erratas.h \
+ ../../../../nRF5_SDK_17.1.0/modules/nrfx/mdk/nrf.h \
+ ../../../../nRF5_SDK_17.1.0/modules/nrfx/mdk/nrf51_erratas.h \
+ ../../../../nRF5_SDK_17.1.0/modules/nrfx/mdk/nrf52_erratas.h \
+ ../../../../nRF5_SDK_17.1.0/modules/nrfx/mdk/nrf53_erratas.h \
+ ../../../../nRF5_SDK_17.1.0/modules/nrfx/mdk/nrf91_erratas.h \
+ ../../../../nRF5_SDK_17.1.0/components/libraries/usbd/app_usbd_class_base.h \
+ ../../../../nRF5_SDK_17.1.0/components/libraries/usbd/app_usbd_types.h \
+ ../../../../nRF5_SDK_17.1.0/components/libraries/usbd/app_usbd_request.h \
+ ../../../../nRF5_SDK_17.1.0/components/libraries/usbd/app_usbd_descriptor.h \
+ ../../../../nRF5_SDK_17.1.0/components/libraries/usbd/app_usbd_langid.h \
+ ../../../../nRF5_SDK_17.1.0/components/libraries/usbd/class/hid/app_usbd_hid_types.h \
+ ../../../../nRF5_SDK_17.1.0/components/libraries/usbd/app_usbd_types.h \
+ ../../../../nRF5_SDK_17.1.0/components/libraries/usbd/class/hid/app_usbd_hid.h \
+ ../../../../nRF5_SDK_17.1.0/components/libraries/atomic/nrf_atomic.h \
+ ../../../../nRF5_SDK_17.1.0/components/libraries/usbd/class/hid/app_usbd_hid_types.h \
+ ../../../../nRF5_SDK_17.1.0/components/libraries/usbd/app_usbd.h \
+ ../../../../nRF5_SDK_17.1.0/components/libraries/usbd/app_usbd_class_base.h \
+ ../../../../nRF5_SDK_17.1.0/components/libraries/usbd/app_usbd_core.h \
+ ../../../../nRF5_SDK_17.1.0/components/libraries/usbd/app_usbd_descriptor.h \
+ C:\Users\Dino\Desktop\BioDAQ\ Fusion\nRF5_SDK_17.1.0\components\libraries\usbd\class\hid\kbd\app_usbd_hid_kbd_desc.h \
+ C:\Users\Dino\Desktop\BioDAQ\ Fusion\nRF5_SDK_17.1.0\components\libraries\usbd\class\hid\kbd\app_usbd_hid_kbd_internal.h
