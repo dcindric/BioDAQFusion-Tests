@@ -51,6 +51,16 @@
       <folder Name="main">
         <file file_name="../../../main/main.c" />
       </folder>
+      <folder Name="tests">
+        <folder Name="inc">
+          <file file_name="gpio_test.h" />
+          <file file_name="i2c_test.h" />
+        </folder>
+        <folder Name="src">
+          <file file_name="gpio_test.c" />
+          <file file_name="i2c_driver.c" />
+        </folder>
+      </folder>
     </folder>
     <folder Name="Board Definition">
       <file file_name="../../../../nRF5_SDK_17.1.0/components/boards/boards.c" />

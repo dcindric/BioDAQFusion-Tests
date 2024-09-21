@@ -1,4 +1,6 @@
 "Output/Debug/Obj/fer_biodaq_fusion_platform/main.o"
+"Output/Debug/Obj/fer_biodaq_fusion_platform/i2c_driver.o"
+"Output/Debug/Obj/fer_biodaq_fusion_platform/gpio_test.o"
 "Output/Debug/Obj/fer_biodaq_fusion_platform/boards.o"
 "Output/Debug/Obj/fer_biodaq_fusion_platform/bsp.o"
 "Output/Debug/Obj/fer_biodaq_fusion_platform/ses_startup_nrf52840.o"

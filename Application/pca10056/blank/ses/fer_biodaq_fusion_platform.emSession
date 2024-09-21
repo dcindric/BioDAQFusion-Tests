@@ -2,12 +2,10 @@
 <session>
  <Bookmarks/>
  <Breakpoints groups="Breakpoints" active_group="Breakpoints">
-  <BreakpointListItem trigger="" line="154" counter="0" hardwareBreakpoint="" isFunctionBreakpoint="false" action="" expression="" group="Breakpoints" type="Breakpoint" state="4" filename="../../../main/main.c" useHWbreakpoint="false"/>
-  <BreakpointListItem trigger="" line="243" counter="0" hardwareBreakpoint="" isFunctionBreakpoint="false" action="" expression="" group="Breakpoints" type="Breakpoint" state="4" filename="../../../main/main.c" useHWbreakpoint="false"/>
-  <BreakpointListItem trigger="" line="264" counter="0" hardwareBreakpoint="" isFunctionBreakpoint="false" action="" expression="" group="Breakpoints" type="Breakpoint" state="4" filename="../../../main/main.c" useHWbreakpoint="false"/>
-  <BreakpointListItem trigger="" line="280" counter="0" hardwareBreakpoint="" isFunctionBreakpoint="false" action="" expression="" group="Breakpoints" type="Breakpoint" state="2" filename="../../../main/main.c" useHWbreakpoint="false"/>
-  <BreakpointListItem trigger="" line="290" counter="0" hardwareBreakpoint="" isFunctionBreakpoint="false" action="" expression="" group="Breakpoints" type="Breakpoint" state="2" filename="../../../main/main.c" useHWbreakpoint="false"/>
-  <BreakpointListItem trigger="" line="294" counter="0" hardwareBreakpoint="" isFunctionBreakpoint="false" action="" expression="" group="Breakpoints" type="Breakpoint" state="2" filename="../../../main/main.c" useHWbreakpoint="false"/>
+  <BreakpointListItem trigger="" line="54" counter="0" hardwareBreakpoint="" isFunctionBreakpoint="false" action="" expression="" group="Breakpoints" type="Breakpoint" state="4" filename="i2c_driver.c" useHWbreakpoint="false"/>
+  <BreakpointListItem trigger="" line="46" counter="0" hardwareBreakpoint="" isFunctionBreakpoint="false" action="" expression="" group="Breakpoints" type="Breakpoint" state="2" filename="../../../main/main.c" useHWbreakpoint="false"/>
+  <BreakpointListItem trigger="" line="77" counter="0" hardwareBreakpoint="" isFunctionBreakpoint="false" action="" expression="" group="Breakpoints" type="Breakpoint" state="2" filename="../../../main/main.c" useHWbreakpoint="false"/>
+  <BreakpointListItem trigger="" line="95" counter="0" hardwareBreakpoint="" isFunctionBreakpoint="false" action="" expression="" group="Breakpoints" type="Breakpoint" state="2" filename="../../../main/main.c" useHWbreakpoint="false"/>
   <Exceptions set="MemManage;UsageFault_Coprocessor;UsageFault_CheckingError;UsageFault_StateError;BusFault;ExceptionEntryReturnFault;HardFault"/>
  </Breakpoints>
  <ExecutionProfileWindow/>
@@ -30,9 +28,14 @@
   <ProjectSessionItem path="fer_biodaq_fusion_platform"/>
   <ProjectSessionItem path="fer_biodaq_fusion_platform;fer_biodaq_fusion_platform"/>
   <ProjectSessionItem path="fer_biodaq_fusion_platform;fer_biodaq_fusion_platform;Application"/>
+  <ProjectSessionItem path="fer_biodaq_fusion_platform;fer_biodaq_fusion_platform;Application;components"/>
   <ProjectSessionItem path="fer_biodaq_fusion_platform;fer_biodaq_fusion_platform;Application;config"/>
   <ProjectSessionItem path="fer_biodaq_fusion_platform;fer_biodaq_fusion_platform;Application;main"/>
+  <ProjectSessionItem path="fer_biodaq_fusion_platform;fer_biodaq_fusion_platform;Application;tests"/>
+  <ProjectSessionItem path="fer_biodaq_fusion_platform;fer_biodaq_fusion_platform;Application;tests;inc"/>
+  <ProjectSessionItem path="fer_biodaq_fusion_platform;fer_biodaq_fusion_platform;Application;tests;src"/>
   <ProjectSessionItem path="fer_biodaq_fusion_platform;fer_biodaq_fusion_platform;Board Definition"/>
+  <ProjectSessionItem path="fer_biodaq_fusion_platform;fer_biodaq_fusion_platform;nRF_Drivers"/>
  </Project>
  <Register1>
   <RegisterWindow visibleNodes="CPU - Current Context/r0;CPU - Current Context/r1;CPU - Current Context/r2;CPU - Current Context/r3;CPU - Current Context/r4;CPU - Current Context/r5;CPU - Current Context/r6;CPU - Current Context/r7;CPU - Current Context/r8;CPU - Current Context/r9;CPU - Current Context/r10;CPU - Current Context/r11;CPU - Current Context/r12;CPU - Current Context/sp(r13);CPU - Current Context/lr(r14);CPU - Current Context/pc(r15);CPU - Current Context/apsr;CPU/r0;CPU/r1;CPU/r2;CPU/r3;CPU/r4;CPU/r5;CPU/r6;CPU/r7;CPU/r8;CPU/r9;CPU/r10;CPU/r11;CPU/r12;CPU/sp(r13);CPU/lr(r14);CPU/pc(r15);CPU/xpsr;CPU/MSP;CPU/PSP;CPU/PRIMASK;CPU/BASEPRI;CPU/FAULTMASK;CPU/CONTROL;CPU/internal" binaryNodes="" asciiNodes="" openNodes="CPU - Current Context" name="fer_biodaq_fusion_platform_Debug" decimalNodes="" octalNodes="" unsignedNodes=""/>
@@ -53,7 +56,10 @@
   <Trace enabled="Yes"/>
  </TraceWindow>
  <Watch1>
-  <Watches active="1" update="Never"/>
+  <Watches active="1" update="Never">
+   <Watchpoint expression="data_to_read" name="data_to_read" radix="-1" linenumber="14" filename="i2c_driver.c"/>
+   <Watchpoint expression="rx_buf" name="rx_buf" radix="-1" linenumber="20" filename="../../../main/main.c"/>
+  </Watches>
  </Watch1>
  <Watch2>
   <Watches active="0" update="Never"/>
@@ -65,14 +71,14 @@
   <Watches active="0" update="Never"/>
  </Watch4>
  <Files>
-  <SessionOpenFile windowGroup="DockEditLeft" x="58" y="277" useTextEdit="1" path="../../../main/main.c" left="0" selected="1" top="262" codecName="Default"/>
-  <SessionOpenFile windowGroup="DockEditLeft" x="12" y="97" useTextEdit="1" openedFrom="C:/Users/Dino/Desktop/BioDAQ Fusion/Application/main/main.c" path="../../../../nRF5_SDK_17.1.0/components/boards/boards.h" left="0" top="97" codecName="Default"/>
-  <SessionOpenFile windowGroup="DockEditLeft" x="0" y="47" useTextEdit="1" openedFrom="C:/Users/Dino/Desktop/BioDAQ Fusion/Application/main/main.c" path="../../../../nRF5_SDK_17.1.0/components/boards/boards.c" left="0" top="36" codecName="Default"/>
-  <SessionOpenFile windowGroup="DockEditLeft" x="0" y="51" useTextEdit="1" openedFrom="C:/Users/Dino/Desktop/BioDAQ Fusion/Application/main/main.c" path="../../../../nRF5_SDK_17.1.0/components/boards/pca10056.h" left="0" top="49" codecName="Default"/>
-  <SessionOpenFile windowGroup="DockEditLeft" x="17" y="652" useTextEdit="1" openedFrom="C:/Users/Dino/Desktop/BioDAQ Fusion/Application/main/main.c" path="../../../../nRF5_SDK_17.1.0/modules/nrfx/hal/nrf_gpio.h" left="0" top="645" codecName="Default"/>
-  <SessionOpenFile windowGroup="DockEditLeft" x="11" y="97" useTextEdit="1" openedFrom="C:/Users/Dino/Desktop/BioDAQ Fusion/Application/main/main.c" path="../../../../nRF5_SDK_17.1.0/integration/nrfx/legacy/nrf_drv_spi.c" left="0" top="94" codecName="Default"/>
-  <SessionOpenFile windowGroup="DockEditLeft" x="11" y="490" useTextEdit="1" openedFrom="C:/Users/Dino/Desktop/BioDAQ Fusion/Application/main/main.c" path="../../../../nRF5_SDK_17.1.0/integration/nrfx/legacy/nrf_drv_spi.h" left="0" top="490" codecName="Default"/>
-  <SessionOpenFile windowGroup="DockEditLeft" x="23" y="3731" useTextEdit="1" path="../config/sdk_config.h" left="0" top="3761" codecName="Default"/>
+  <SessionOpenFile windowGroup="DockEditLeft" x="22" y="74" useTextEdit="1" path="../../../main/main.c" left="0" selected="1" top="63" codecName="Default"/>
+  <SessionOpenFile windowGroup="DockEditLeft" x="13" y="21" useTextEdit="1" path="i2c_test.h" left="0" top="0" codecName="Default"/>
+  <SessionOpenFile windowGroup="DockEditLeft" x="0" y="53" useTextEdit="1" path="i2c_driver.c" left="0" top="29" codecName="Default"/>
+  <SessionOpenFile windowGroup="DockEditLeft" x="8" y="160" useTextEdit="1" openedFrom="C:/Users/Dino/Desktop/BioDAQ Fusion/Application/pca10056/blank/ses/i2c_driver.c" path="../../../../nRF5_SDK_17.1.0/components/libraries/util/app_error.h" left="0" top="143" codecName="Default"/>
+  <SessionOpenFile windowGroup="DockEditLeft" x="22" y="57" useTextEdit="1" path="gpio_test.h" left="0" top="25" codecName="Default"/>
+  <SessionOpenFile windowGroup="DockEditLeft" x="6" y="8" useTextEdit="1" path="gpio_test.c" left="0" top="0" codecName="Default"/>
+  <SessionOpenFile windowGroup="DockEditLeft" x="37" y="81" useTextEdit="1" path="../../../../nRF5_SDK_17.1.0/modules/nrfx/drivers/include/nrfx_spi.h" left="0" top="59" codecName="Default"/>
+  <SessionOpenFile windowGroup="DockEditLeft" x="8" y="196" useTextEdit="1" openedFrom="C:/Users/Dino/Desktop/BioDAQ Fusion/Application/main/main.c" path="../../../../nRF5_SDK_17.1.0/modules/nrfx/drivers/include/nrfx_spim.h" left="0" top="178" codecName="Default"/>
  </Files>
  <EMStudioWindow activeProject="fer_biodaq_fusion_platform" fileDialogDefaultFilter="*.*" autoConnectTarget="J-Link" buildConfiguration="Debug" sessionSettings="" debugSearchFileMap="" fileDialogInitialDirectory="C:/Users/Dino/Desktop/BioDAQ Fusion/Application/pca10056/blank/config" debugSearchPath="" autoConnectCapabilities="3711"/>
 </session>
