@@ -1,0 +1,6 @@
+*.elf
+*.hex
+*.map
+*.d
+*.o
+*.emSession
