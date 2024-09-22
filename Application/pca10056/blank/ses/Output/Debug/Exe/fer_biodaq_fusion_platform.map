@@ -93,6 +93,115 @@ Discarded input sections
  .text          0x0000000000000000        0x0 Output/Debug/Obj/fer_biodaq_fusion_platform/main.o
  .data          0x0000000000000000        0x0 Output/Debug/Obj/fer_biodaq_fusion_platform/main.o
  .bss           0x0000000000000000        0x0 Output/Debug/Obj/fer_biodaq_fusion_platform/main.o
+ .group         0x0000000000000000        0xc Output/Debug/Obj/fer_biodaq_fusion_platform/gpio_test.o
+ .group         0x0000000000000000        0xc Output/Debug/Obj/fer_biodaq_fusion_platform/gpio_test.o
+ .group         0x0000000000000000        0xc Output/Debug/Obj/fer_biodaq_fusion_platform/gpio_test.o
+ .group         0x0000000000000000        0xc Output/Debug/Obj/fer_biodaq_fusion_platform/gpio_test.o
+ .group         0x0000000000000000        0xc Output/Debug/Obj/fer_biodaq_fusion_platform/gpio_test.o
+ .group         0x0000000000000000        0xc Output/Debug/Obj/fer_biodaq_fusion_platform/gpio_test.o
+ .group         0x0000000000000000        0xc Output/Debug/Obj/fer_biodaq_fusion_platform/gpio_test.o
+ .group         0x0000000000000000        0xc Output/Debug/Obj/fer_biodaq_fusion_platform/gpio_test.o
+ .group         0x0000000000000000        0xc Output/Debug/Obj/fer_biodaq_fusion_platform/gpio_test.o
+ .group         0x0000000000000000        0xc Output/Debug/Obj/fer_biodaq_fusion_platform/gpio_test.o
+ .group         0x0000000000000000        0xc Output/Debug/Obj/fer_biodaq_fusion_platform/gpio_test.o
+ .group         0x0000000000000000        0xc Output/Debug/Obj/fer_biodaq_fusion_platform/gpio_test.o
+ .group         0x0000000000000000        0xc Output/Debug/Obj/fer_biodaq_fusion_platform/gpio_test.o
+ .group         0x0000000000000000        0xc Output/Debug/Obj/fer_biodaq_fusion_platform/gpio_test.o
+ .group         0x0000000000000000        0xc Output/Debug/Obj/fer_biodaq_fusion_platform/gpio_test.o
+ .group         0x0000000000000000        0xc Output/Debug/Obj/fer_biodaq_fusion_platform/gpio_test.o
+ .group         0x0000000000000000        0xc Output/Debug/Obj/fer_biodaq_fusion_platform/gpio_test.o
+ .group         0x0000000000000000        0xc Output/Debug/Obj/fer_biodaq_fusion_platform/gpio_test.o
+ .group         0x0000000000000000        0xc Output/Debug/Obj/fer_biodaq_fusion_platform/gpio_test.o
+ .group         0x0000000000000000        0xc Output/Debug/Obj/fer_biodaq_fusion_platform/gpio_test.o
+ .group         0x0000000000000000        0xc Output/Debug/Obj/fer_biodaq_fusion_platform/gpio_test.o
+ .group         0x0000000000000000        0xc Output/Debug/Obj/fer_biodaq_fusion_platform/gpio_test.o
+ .group         0x0000000000000000        0xc Output/Debug/Obj/fer_biodaq_fusion_platform/gpio_test.o
+ .group         0x0000000000000000        0xc Output/Debug/Obj/fer_biodaq_fusion_platform/gpio_test.o
+ .group         0x0000000000000000        0xc Output/Debug/Obj/fer_biodaq_fusion_platform/gpio_test.o
+ .group         0x0000000000000000        0xc Output/Debug/Obj/fer_biodaq_fusion_platform/gpio_test.o
+ .group         0x0000000000000000        0xc Output/Debug/Obj/fer_biodaq_fusion_platform/gpio_test.o
+ .group         0x0000000000000000        0xc Output/Debug/Obj/fer_biodaq_fusion_platform/gpio_test.o
+ .group         0x0000000000000000        0xc Output/Debug/Obj/fer_biodaq_fusion_platform/gpio_test.o
+ .group         0x0000000000000000        0xc Output/Debug/Obj/fer_biodaq_fusion_platform/gpio_test.o
+ .group         0x0000000000000000        0xc Output/Debug/Obj/fer_biodaq_fusion_platform/gpio_test.o
+ .group         0x0000000000000000        0xc Output/Debug/Obj/fer_biodaq_fusion_platform/gpio_test.o
+ .group         0x0000000000000000        0xc Output/Debug/Obj/fer_biodaq_fusion_platform/gpio_test.o
+ .group         0x0000000000000000        0xc Output/Debug/Obj/fer_biodaq_fusion_platform/gpio_test.o
+ .group         0x0000000000000000        0xc Output/Debug/Obj/fer_biodaq_fusion_platform/gpio_test.o
+ .group         0x0000000000000000        0xc Output/Debug/Obj/fer_biodaq_fusion_platform/gpio_test.o
+ .group         0x0000000000000000        0xc Output/Debug/Obj/fer_biodaq_fusion_platform/gpio_test.o
+ .group         0x0000000000000000        0xc Output/Debug/Obj/fer_biodaq_fusion_platform/gpio_test.o
+ .group         0x0000000000000000        0xc Output/Debug/Obj/fer_biodaq_fusion_platform/gpio_test.o
+ .group         0x0000000000000000        0xc Output/Debug/Obj/fer_biodaq_fusion_platform/gpio_test.o
+ .group         0x0000000000000000        0xc Output/Debug/Obj/fer_biodaq_fusion_platform/gpio_test.o
+ .group         0x0000000000000000        0xc Output/Debug/Obj/fer_biodaq_fusion_platform/gpio_test.o
+ .group         0x0000000000000000        0xc Output/Debug/Obj/fer_biodaq_fusion_platform/gpio_test.o
+ .group         0x0000000000000000        0xc Output/Debug/Obj/fer_biodaq_fusion_platform/gpio_test.o
+ .text          0x0000000000000000        0x0 Output/Debug/Obj/fer_biodaq_fusion_platform/gpio_test.o
+ .data          0x0000000000000000        0x0 Output/Debug/Obj/fer_biodaq_fusion_platform/gpio_test.o
+ .bss           0x0000000000000000        0x0 Output/Debug/Obj/fer_biodaq_fusion_platform/gpio_test.o
+ .text.gpio_test
+                0x0000000000000000        0x4 Output/Debug/Obj/fer_biodaq_fusion_platform/gpio_test.o
+ .debug_frame   0x0000000000000000       0x20 Output/Debug/Obj/fer_biodaq_fusion_platform/gpio_test.o
+ .debug_info    0x0000000000000000       0x82 Output/Debug/Obj/fer_biodaq_fusion_platform/gpio_test.o
+ .debug_abbrev  0x0000000000000000       0x4a Output/Debug/Obj/fer_biodaq_fusion_platform/gpio_test.o
+ .debug_pubnames
+                0x0000000000000000       0x20 Output/Debug/Obj/fer_biodaq_fusion_platform/gpio_test.o
+ .debug_pubtypes
+                0x0000000000000000       0xb5 Output/Debug/Obj/fer_biodaq_fusion_platform/gpio_test.o
+ .debug_aranges
+                0x0000000000000000       0x20 Output/Debug/Obj/fer_biodaq_fusion_platform/gpio_test.o
+ .debug_ranges  0x0000000000000000       0x10 Output/Debug/Obj/fer_biodaq_fusion_platform/gpio_test.o
+ .debug_macro   0x0000000000000000      0x251 Output/Debug/Obj/fer_biodaq_fusion_platform/gpio_test.o
+ .debug_macro   0x0000000000000000      0xb80 Output/Debug/Obj/fer_biodaq_fusion_platform/gpio_test.o
+ .debug_macro   0x0000000000000000       0x4c Output/Debug/Obj/fer_biodaq_fusion_platform/gpio_test.o
+ .debug_macro   0x0000000000000000       0x10 Output/Debug/Obj/fer_biodaq_fusion_platform/gpio_test.o
+ .debug_macro   0x0000000000000000     0x1a6e Output/Debug/Obj/fer_biodaq_fusion_platform/gpio_test.o
+ .debug_macro   0x0000000000000000       0x10 Output/Debug/Obj/fer_biodaq_fusion_platform/gpio_test.o
+ .debug_macro   0x0000000000000000      0x26b Output/Debug/Obj/fer_biodaq_fusion_platform/gpio_test.o
+ .debug_macro   0x0000000000000000      0x295 Output/Debug/Obj/fer_biodaq_fusion_platform/gpio_test.o
+ .debug_macro   0x0000000000000000       0x1c Output/Debug/Obj/fer_biodaq_fusion_platform/gpio_test.o
+ .debug_macro   0x0000000000000000      0x17b Output/Debug/Obj/fer_biodaq_fusion_platform/gpio_test.o
+ .debug_macro   0x0000000000000000       0x22 Output/Debug/Obj/fer_biodaq_fusion_platform/gpio_test.o
+ .debug_macro   0x0000000000000000       0x22 Output/Debug/Obj/fer_biodaq_fusion_platform/gpio_test.o
+ .debug_macro   0x0000000000000000       0x22 Output/Debug/Obj/fer_biodaq_fusion_platform/gpio_test.o
+ .debug_macro   0x0000000000000000       0x3b Output/Debug/Obj/fer_biodaq_fusion_platform/gpio_test.o
+ .debug_macro   0x0000000000000000       0x1c Output/Debug/Obj/fer_biodaq_fusion_platform/gpio_test.o
+ .debug_macro   0x0000000000000000       0x22 Output/Debug/Obj/fer_biodaq_fusion_platform/gpio_test.o
+ .debug_macro   0x0000000000000000       0xfb Output/Debug/Obj/fer_biodaq_fusion_platform/gpio_test.o
+ .debug_macro   0x0000000000000000     0x1011 Output/Debug/Obj/fer_biodaq_fusion_platform/gpio_test.o
+ .debug_macro   0x0000000000000000      0x11f Output/Debug/Obj/fer_biodaq_fusion_platform/gpio_test.o
+ .debug_macro   0x0000000000000000      0x410 Output/Debug/Obj/fer_biodaq_fusion_platform/gpio_test.o
+ .debug_macro   0x0000000000000000    0x10d6b Output/Debug/Obj/fer_biodaq_fusion_platform/gpio_test.o
+ .debug_macro   0x0000000000000000      0xa65 Output/Debug/Obj/fer_biodaq_fusion_platform/gpio_test.o
+ .debug_macro   0x0000000000000000       0x96 Output/Debug/Obj/fer_biodaq_fusion_platform/gpio_test.o
+ .debug_macro   0x0000000000000000       0x40 Output/Debug/Obj/fer_biodaq_fusion_platform/gpio_test.o
+ .debug_macro   0x0000000000000000      0x462 Output/Debug/Obj/fer_biodaq_fusion_platform/gpio_test.o
+ .debug_macro   0x0000000000000000       0x59 Output/Debug/Obj/fer_biodaq_fusion_platform/gpio_test.o
+ .debug_macro   0x0000000000000000      0xe62 Output/Debug/Obj/fer_biodaq_fusion_platform/gpio_test.o
+ .debug_macro   0x0000000000000000       0xfd Output/Debug/Obj/fer_biodaq_fusion_platform/gpio_test.o
+ .debug_macro   0x0000000000000000       0x16 Output/Debug/Obj/fer_biodaq_fusion_platform/gpio_test.o
+ .debug_macro   0x0000000000000000      0x16d Output/Debug/Obj/fer_biodaq_fusion_platform/gpio_test.o
+ .debug_macro   0x0000000000000000      0x7ca Output/Debug/Obj/fer_biodaq_fusion_platform/gpio_test.o
+ .debug_macro   0x0000000000000000       0x3f Output/Debug/Obj/fer_biodaq_fusion_platform/gpio_test.o
+ .debug_macro   0x0000000000000000       0x58 Output/Debug/Obj/fer_biodaq_fusion_platform/gpio_test.o
+ .debug_macro   0x0000000000000000       0x8e Output/Debug/Obj/fer_biodaq_fusion_platform/gpio_test.o
+ .debug_macro   0x0000000000000000       0xad Output/Debug/Obj/fer_biodaq_fusion_platform/gpio_test.o
+ .debug_macro   0x0000000000000000       0x49 Output/Debug/Obj/fer_biodaq_fusion_platform/gpio_test.o
+ .debug_macro   0x0000000000000000       0x8c Output/Debug/Obj/fer_biodaq_fusion_platform/gpio_test.o
+ .debug_macro   0x0000000000000000       0x19 Output/Debug/Obj/fer_biodaq_fusion_platform/gpio_test.o
+ .debug_macro   0x0000000000000000       0x1d Output/Debug/Obj/fer_biodaq_fusion_platform/gpio_test.o
+ .debug_macro   0x0000000000000000       0x35 Output/Debug/Obj/fer_biodaq_fusion_platform/gpio_test.o
+ .debug_macro   0x0000000000000000       0x7b Output/Debug/Obj/fer_biodaq_fusion_platform/gpio_test.o
+ .debug_macro   0x0000000000000000       0x64 Output/Debug/Obj/fer_biodaq_fusion_platform/gpio_test.o
+ .debug_macro   0x0000000000000000       0x20 Output/Debug/Obj/fer_biodaq_fusion_platform/gpio_test.o
+ .debug_macro   0x0000000000000000       0x1c Output/Debug/Obj/fer_biodaq_fusion_platform/gpio_test.o
+ .debug_macro   0x0000000000000000       0x94 Output/Debug/Obj/fer_biodaq_fusion_platform/gpio_test.o
+ .debug_line    0x0000000000000000      0x5ee Output/Debug/Obj/fer_biodaq_fusion_platform/gpio_test.o
+ .debug_str     0x0000000000000000    0x8e9bd Output/Debug/Obj/fer_biodaq_fusion_platform/gpio_test.o
+ .comment       0x0000000000000000       0x33 Output/Debug/Obj/fer_biodaq_fusion_platform/gpio_test.o
+ .ARM.attributes
+                0x0000000000000000       0x36 Output/Debug/Obj/fer_biodaq_fusion_platform/gpio_test.o
  .group         0x0000000000000000        0xc Output/Debug/Obj/fer_biodaq_fusion_platform/i2c_driver.o
  .group         0x0000000000000000        0xc Output/Debug/Obj/fer_biodaq_fusion_platform/i2c_driver.o
  .group         0x0000000000000000        0xc Output/Debug/Obj/fer_biodaq_fusion_platform/i2c_driver.o
@@ -271,115 +380,6 @@ Discarded input sections
  .comment       0x0000000000000000       0x33 Output/Debug/Obj/fer_biodaq_fusion_platform/i2c_driver.o
  .ARM.attributes
                 0x0000000000000000       0x36 Output/Debug/Obj/fer_biodaq_fusion_platform/i2c_driver.o
- .group         0x0000000000000000        0xc Output/Debug/Obj/fer_biodaq_fusion_platform/gpio_test.o
- .group         0x0000000000000000        0xc Output/Debug/Obj/fer_biodaq_fusion_platform/gpio_test.o
- .group         0x0000000000000000        0xc Output/Debug/Obj/fer_biodaq_fusion_platform/gpio_test.o
- .group         0x0000000000000000        0xc Output/Debug/Obj/fer_biodaq_fusion_platform/gpio_test.o
- .group         0x0000000000000000        0xc Output/Debug/Obj/fer_biodaq_fusion_platform/gpio_test.o
- .group         0x0000000000000000        0xc Output/Debug/Obj/fer_biodaq_fusion_platform/gpio_test.o
- .group         0x0000000000000000        0xc Output/Debug/Obj/fer_biodaq_fusion_platform/gpio_test.o
- .group         0x0000000000000000        0xc Output/Debug/Obj/fer_biodaq_fusion_platform/gpio_test.o
- .group         0x0000000000000000        0xc Output/Debug/Obj/fer_biodaq_fusion_platform/gpio_test.o
- .group         0x0000000000000000        0xc Output/Debug/Obj/fer_biodaq_fusion_platform/gpio_test.o
- .group         0x0000000000000000        0xc Output/Debug/Obj/fer_biodaq_fusion_platform/gpio_test.o
- .group         0x0000000000000000        0xc Output/Debug/Obj/fer_biodaq_fusion_platform/gpio_test.o
- .group         0x0000000000000000        0xc Output/Debug/Obj/fer_biodaq_fusion_platform/gpio_test.o
- .group         0x0000000000000000        0xc Output/Debug/Obj/fer_biodaq_fusion_platform/gpio_test.o
- .group         0x0000000000000000        0xc Output/Debug/Obj/fer_biodaq_fusion_platform/gpio_test.o
- .group         0x0000000000000000        0xc Output/Debug/Obj/fer_biodaq_fusion_platform/gpio_test.o
- .group         0x0000000000000000        0xc Output/Debug/Obj/fer_biodaq_fusion_platform/gpio_test.o
- .group         0x0000000000000000        0xc Output/Debug/Obj/fer_biodaq_fusion_platform/gpio_test.o
- .group         0x0000000000000000        0xc Output/Debug/Obj/fer_biodaq_fusion_platform/gpio_test.o
- .group         0x0000000000000000        0xc Output/Debug/Obj/fer_biodaq_fusion_platform/gpio_test.o
- .group         0x0000000000000000        0xc Output/Debug/Obj/fer_biodaq_fusion_platform/gpio_test.o
- .group         0x0000000000000000        0xc Output/Debug/Obj/fer_biodaq_fusion_platform/gpio_test.o
- .group         0x0000000000000000        0xc Output/Debug/Obj/fer_biodaq_fusion_platform/gpio_test.o
- .group         0x0000000000000000        0xc Output/Debug/Obj/fer_biodaq_fusion_platform/gpio_test.o
- .group         0x0000000000000000        0xc Output/Debug/Obj/fer_biodaq_fusion_platform/gpio_test.o
- .group         0x0000000000000000        0xc Output/Debug/Obj/fer_biodaq_fusion_platform/gpio_test.o
- .group         0x0000000000000000        0xc Output/Debug/Obj/fer_biodaq_fusion_platform/gpio_test.o
- .group         0x0000000000000000        0xc Output/Debug/Obj/fer_biodaq_fusion_platform/gpio_test.o
- .group         0x0000000000000000        0xc Output/Debug/Obj/fer_biodaq_fusion_platform/gpio_test.o
- .group         0x0000000000000000        0xc Output/Debug/Obj/fer_biodaq_fusion_platform/gpio_test.o
- .group         0x0000000000000000        0xc Output/Debug/Obj/fer_biodaq_fusion_platform/gpio_test.o
- .group         0x0000000000000000        0xc Output/Debug/Obj/fer_biodaq_fusion_platform/gpio_test.o
- .group         0x0000000000000000        0xc Output/Debug/Obj/fer_biodaq_fusion_platform/gpio_test.o
- .group         0x0000000000000000        0xc Output/Debug/Obj/fer_biodaq_fusion_platform/gpio_test.o
- .group         0x0000000000000000        0xc Output/Debug/Obj/fer_biodaq_fusion_platform/gpio_test.o
- .group         0x0000000000000000        0xc Output/Debug/Obj/fer_biodaq_fusion_platform/gpio_test.o
- .group         0x0000000000000000        0xc Output/Debug/Obj/fer_biodaq_fusion_platform/gpio_test.o
- .group         0x0000000000000000        0xc Output/Debug/Obj/fer_biodaq_fusion_platform/gpio_test.o
- .group         0x0000000000000000        0xc Output/Debug/Obj/fer_biodaq_fusion_platform/gpio_test.o
- .group         0x0000000000000000        0xc Output/Debug/Obj/fer_biodaq_fusion_platform/gpio_test.o
- .group         0x0000000000000000        0xc Output/Debug/Obj/fer_biodaq_fusion_platform/gpio_test.o
- .group         0x0000000000000000        0xc Output/Debug/Obj/fer_biodaq_fusion_platform/gpio_test.o
- .group         0x0000000000000000        0xc Output/Debug/Obj/fer_biodaq_fusion_platform/gpio_test.o
- .group         0x0000000000000000        0xc Output/Debug/Obj/fer_biodaq_fusion_platform/gpio_test.o
- .text          0x0000000000000000        0x0 Output/Debug/Obj/fer_biodaq_fusion_platform/gpio_test.o
- .data          0x0000000000000000        0x0 Output/Debug/Obj/fer_biodaq_fusion_platform/gpio_test.o
- .bss           0x0000000000000000        0x0 Output/Debug/Obj/fer_biodaq_fusion_platform/gpio_test.o
- .text.gpio_test
-                0x0000000000000000        0x4 Output/Debug/Obj/fer_biodaq_fusion_platform/gpio_test.o
- .debug_frame   0x0000000000000000       0x20 Output/Debug/Obj/fer_biodaq_fusion_platform/gpio_test.o
- .debug_info    0x0000000000000000       0x82 Output/Debug/Obj/fer_biodaq_fusion_platform/gpio_test.o
- .debug_abbrev  0x0000000000000000       0x4a Output/Debug/Obj/fer_biodaq_fusion_platform/gpio_test.o
- .debug_pubnames
-                0x0000000000000000       0x20 Output/Debug/Obj/fer_biodaq_fusion_platform/gpio_test.o
- .debug_pubtypes
-                0x0000000000000000       0xb5 Output/Debug/Obj/fer_biodaq_fusion_platform/gpio_test.o
- .debug_aranges
-                0x0000000000000000       0x20 Output/Debug/Obj/fer_biodaq_fusion_platform/gpio_test.o
- .debug_ranges  0x0000000000000000       0x10 Output/Debug/Obj/fer_biodaq_fusion_platform/gpio_test.o
- .debug_macro   0x0000000000000000      0x251 Output/Debug/Obj/fer_biodaq_fusion_platform/gpio_test.o
- .debug_macro   0x0000000000000000      0xb80 Output/Debug/Obj/fer_biodaq_fusion_platform/gpio_test.o
- .debug_macro   0x0000000000000000       0x4c Output/Debug/Obj/fer_biodaq_fusion_platform/gpio_test.o
- .debug_macro   0x0000000000000000       0x10 Output/Debug/Obj/fer_biodaq_fusion_platform/gpio_test.o
- .debug_macro   0x0000000000000000     0x1a6e Output/Debug/Obj/fer_biodaq_fusion_platform/gpio_test.o
- .debug_macro   0x0000000000000000       0x10 Output/Debug/Obj/fer_biodaq_fusion_platform/gpio_test.o
- .debug_macro   0x0000000000000000      0x26b Output/Debug/Obj/fer_biodaq_fusion_platform/gpio_test.o
- .debug_macro   0x0000000000000000      0x295 Output/Debug/Obj/fer_biodaq_fusion_platform/gpio_test.o
- .debug_macro   0x0000000000000000       0x1c Output/Debug/Obj/fer_biodaq_fusion_platform/gpio_test.o
- .debug_macro   0x0000000000000000      0x17b Output/Debug/Obj/fer_biodaq_fusion_platform/gpio_test.o
- .debug_macro   0x0000000000000000       0x22 Output/Debug/Obj/fer_biodaq_fusion_platform/gpio_test.o
- .debug_macro   0x0000000000000000       0x22 Output/Debug/Obj/fer_biodaq_fusion_platform/gpio_test.o
- .debug_macro   0x0000000000000000       0x22 Output/Debug/Obj/fer_biodaq_fusion_platform/gpio_test.o
- .debug_macro   0x0000000000000000       0x3b Output/Debug/Obj/fer_biodaq_fusion_platform/gpio_test.o
- .debug_macro   0x0000000000000000       0x1c Output/Debug/Obj/fer_biodaq_fusion_platform/gpio_test.o
- .debug_macro   0x0000000000000000       0x22 Output/Debug/Obj/fer_biodaq_fusion_platform/gpio_test.o
- .debug_macro   0x0000000000000000       0xfb Output/Debug/Obj/fer_biodaq_fusion_platform/gpio_test.o
- .debug_macro   0x0000000000000000     0x1011 Output/Debug/Obj/fer_biodaq_fusion_platform/gpio_test.o
- .debug_macro   0x0000000000000000      0x11f Output/Debug/Obj/fer_biodaq_fusion_platform/gpio_test.o
- .debug_macro   0x0000000000000000      0x410 Output/Debug/Obj/fer_biodaq_fusion_platform/gpio_test.o
- .debug_macro   0x0000000000000000    0x10d6b Output/Debug/Obj/fer_biodaq_fusion_platform/gpio_test.o
- .debug_macro   0x0000000000000000      0xa65 Output/Debug/Obj/fer_biodaq_fusion_platform/gpio_test.o
- .debug_macro   0x0000000000000000       0x96 Output/Debug/Obj/fer_biodaq_fusion_platform/gpio_test.o
- .debug_macro   0x0000000000000000       0x40 Output/Debug/Obj/fer_biodaq_fusion_platform/gpio_test.o
- .debug_macro   0x0000000000000000      0x462 Output/Debug/Obj/fer_biodaq_fusion_platform/gpio_test.o
- .debug_macro   0x0000000000000000       0x59 Output/Debug/Obj/fer_biodaq_fusion_platform/gpio_test.o
- .debug_macro   0x0000000000000000      0xe62 Output/Debug/Obj/fer_biodaq_fusion_platform/gpio_test.o
- .debug_macro   0x0000000000000000       0xfd Output/Debug/Obj/fer_biodaq_fusion_platform/gpio_test.o
- .debug_macro   0x0000000000000000       0x16 Output/Debug/Obj/fer_biodaq_fusion_platform/gpio_test.o
- .debug_macro   0x0000000000000000      0x16d Output/Debug/Obj/fer_biodaq_fusion_platform/gpio_test.o
- .debug_macro   0x0000000000000000      0x7ca Output/Debug/Obj/fer_biodaq_fusion_platform/gpio_test.o
- .debug_macro   0x0000000000000000       0x3f Output/Debug/Obj/fer_biodaq_fusion_platform/gpio_test.o
- .debug_macro   0x0000000000000000       0x58 Output/Debug/Obj/fer_biodaq_fusion_platform/gpio_test.o
- .debug_macro   0x0000000000000000       0x8e Output/Debug/Obj/fer_biodaq_fusion_platform/gpio_test.o
- .debug_macro   0x0000000000000000       0xad Output/Debug/Obj/fer_biodaq_fusion_platform/gpio_test.o
- .debug_macro   0x0000000000000000       0x49 Output/Debug/Obj/fer_biodaq_fusion_platform/gpio_test.o
- .debug_macro   0x0000000000000000       0x8c Output/Debug/Obj/fer_biodaq_fusion_platform/gpio_test.o
- .debug_macro   0x0000000000000000       0x19 Output/Debug/Obj/fer_biodaq_fusion_platform/gpio_test.o
- .debug_macro   0x0000000000000000       0x1d Output/Debug/Obj/fer_biodaq_fusion_platform/gpio_test.o
- .debug_macro   0x0000000000000000       0x35 Output/Debug/Obj/fer_biodaq_fusion_platform/gpio_test.o
- .debug_macro   0x0000000000000000       0x7b Output/Debug/Obj/fer_biodaq_fusion_platform/gpio_test.o
- .debug_macro   0x0000000000000000       0x64 Output/Debug/Obj/fer_biodaq_fusion_platform/gpio_test.o
- .debug_macro   0x0000000000000000       0x20 Output/Debug/Obj/fer_biodaq_fusion_platform/gpio_test.o
- .debug_macro   0x0000000000000000       0x1c Output/Debug/Obj/fer_biodaq_fusion_platform/gpio_test.o
- .debug_macro   0x0000000000000000       0x94 Output/Debug/Obj/fer_biodaq_fusion_platform/gpio_test.o
- .debug_line    0x0000000000000000      0x5ee Output/Debug/Obj/fer_biodaq_fusion_platform/gpio_test.o
- .debug_str     0x0000000000000000    0x8e9bd Output/Debug/Obj/fer_biodaq_fusion_platform/gpio_test.o
- .comment       0x0000000000000000       0x33 Output/Debug/Obj/fer_biodaq_fusion_platform/gpio_test.o
- .ARM.attributes
-                0x0000000000000000       0x36 Output/Debug/Obj/fer_biodaq_fusion_platform/gpio_test.o
  .group         0x0000000000000000        0xc Output/Debug/Obj/fer_biodaq_fusion_platform/boards.o
  .group         0x0000000000000000        0xc Output/Debug/Obj/fer_biodaq_fusion_platform/boards.o
  .group         0x0000000000000000        0xc Output/Debug/Obj/fer_biodaq_fusion_platform/boards.o
@@ -35701,10 +35701,11 @@ Linker script and memory map
                 0x00000000000005cc       0x58 Output/Debug/Obj/fer_biodaq_fusion_platform/main.o
                 0x00000000000005cc                spim_init
  .text.ads1292_read_device_id
-                0x0000000000000624       0x4c Output/Debug/Obj/fer_biodaq_fusion_platform/main.o
+                0x0000000000000624       0x58 Output/Debug/Obj/fer_biodaq_fusion_platform/main.o
                 0x0000000000000624                ads1292_read_device_id
- .text.main     0x0000000000000670       0x4c Output/Debug/Obj/fer_biodaq_fusion_platform/main.o
-                0x0000000000000670                main
+ .text.main     0x000000000000067c       0x3e Output/Debug/Obj/fer_biodaq_fusion_platform/main.o
+                0x000000000000067c                main
+ *fill*         0x00000000000006ba        0x2 
  .text.__NVIC_SystemReset
                 0x00000000000006bc       0x28 Output/Debug/Obj/fer_biodaq_fusion_platform/system_nrf52840.o
  .text.nrf52_errata_36
@@ -37253,8 +37254,8 @@ Linker script and memory map
                 0x0000000000000001                . = ASSERT ((__stack_process_size__ <= __STACKSIZE_PROCESS__), error: .stack_process is larger than specified size)
 START GROUP
 LOAD Output/Debug/Obj/fer_biodaq_fusion_platform/main.o
-LOAD Output/Debug/Obj/fer_biodaq_fusion_platform/i2c_driver.o
 LOAD Output/Debug/Obj/fer_biodaq_fusion_platform/gpio_test.o
+LOAD Output/Debug/Obj/fer_biodaq_fusion_platform/i2c_driver.o
 LOAD Output/Debug/Obj/fer_biodaq_fusion_platform/boards.o
 LOAD Output/Debug/Obj/fer_biodaq_fusion_platform/bsp.o
 LOAD Output/Debug/Obj/fer_biodaq_fusion_platform/ses_startup_nrf52840.o
@@ -38067,134 +38068,134 @@ LOAD linker stubs
  .debug_macro   0x000000000002035d       0x10 Output/Debug/Obj/fer_biodaq_fusion_platform/task_manager.o
  .debug_macro   0x000000000002036d       0x1c Output/Debug/Obj/fer_biodaq_fusion_platform/task_manager.o
 
-.debug_line     0x0000000000000000    0x25fbe
- .debug_line    0x0000000000000000      0x8c8 Output/Debug/Obj/fer_biodaq_fusion_platform/main.o
- .debug_line    0x00000000000008c8       0x9a Output/Debug/Obj/fer_biodaq_fusion_platform/ses_startup_nrf52840.o
- .debug_line    0x0000000000000962       0xb9 Output/Debug/Obj/fer_biodaq_fusion_platform/ses_startup_nrf_common.o
- .debug_line    0x0000000000000a1b     0x3b34 Output/Debug/Obj/fer_biodaq_fusion_platform/system_nrf52840.o
- .debug_line    0x000000000000454f      0x17d Output/Debug/Obj/fer_biodaq_fusion_platform/thumb_crt0.o
- .debug_line    0x00000000000046cc      0x8f1 Output/Debug/Obj/fer_biodaq_fusion_platform/nrf_drv_rng.o
- .debug_line    0x0000000000004fbd      0x804 Output/Debug/Obj/fer_biodaq_fusion_platform/nrfx_atomic.o
- .debug_line    0x00000000000057c1      0xc1c Output/Debug/Obj/fer_biodaq_fusion_platform/nrfx_clock.o
- .debug_line    0x00000000000063dd     0x18e0 Output/Debug/Obj/fer_biodaq_fusion_platform/nrfx_gpiote.o
- .debug_line    0x0000000000007cbd      0xf18 Output/Debug/Obj/fer_biodaq_fusion_platform/nrfx_i2s.o
- .debug_line    0x0000000000008bd5      0xe99 Output/Debug/Obj/fer_biodaq_fusion_platform/nrfx_pdm.o
- .debug_line    0x0000000000009a6e      0xc93 Output/Debug/Obj/fer_biodaq_fusion_platform/nrfx_power.o
- .debug_line    0x000000000000a701      0x85b Output/Debug/Obj/fer_biodaq_fusion_platform/nrfx_prs.o
- .debug_line    0x000000000000af5c     0x10ff Output/Debug/Obj/fer_biodaq_fusion_platform/nrfx_pwm.o
- .debug_line    0x000000000000c05b      0xd4a Output/Debug/Obj/fer_biodaq_fusion_platform/nrfx_qdec.o
- .debug_line    0x000000000000cda5     0x11cf Output/Debug/Obj/fer_biodaq_fusion_platform/nrfx_qspi.o
- .debug_line    0x000000000000df74      0xa31 Output/Debug/Obj/fer_biodaq_fusion_platform/nrfx_rng.o
- .debug_line    0x000000000000e9a5      0xd7c Output/Debug/Obj/fer_biodaq_fusion_platform/nrfx_rtc.o
- .debug_line    0x000000000000f721     0x1170 Output/Debug/Obj/fer_biodaq_fusion_platform/nrfx_saadc.o
- .debug_line    0x0000000000010891     0x118c Output/Debug/Obj/fer_biodaq_fusion_platform/nrfx_spim.o
- .debug_line    0x0000000000011a1d      0xbe2 Output/Debug/Obj/fer_biodaq_fusion_platform/nrfx_swi.o
- .debug_line    0x00000000000125ff      0xf18 Output/Debug/Obj/fer_biodaq_fusion_platform/nrfx_timer.o
- .debug_line    0x0000000000013517     0x5f77 Output/Debug/Obj/fer_biodaq_fusion_platform/nrfx_usbd.o
- .debug_line    0x000000000001948e      0xa84 Output/Debug/Obj/fer_biodaq_fusion_platform/nrfx_wdt.o
- .debug_line    0x0000000000019f12      0x3cc Output/Debug/Obj/fer_biodaq_fusion_platform/app_error.o
- .debug_line    0x000000000001a2de      0x625 Output/Debug/Obj/fer_biodaq_fusion_platform/app_error_weak.o
- .debug_line    0x000000000001a903      0x4a4 Output/Debug/Obj/fer_biodaq_fusion_platform/app_util_platform.o
- .debug_line    0x000000000001ada7      0xe74 Output/Debug/Obj/fer_biodaq_fusion_platform/drv_rtc.o
- .debug_line    0x000000000001bc1b     0x19da Output/Debug/Obj/fer_biodaq_fusion_platform/fds.o
- .debug_line    0x000000000001d5f5      0x3f2 Output/Debug/Obj/fer_biodaq_fusion_platform/hardfault_handler_gcc.o
- .debug_line    0x000000000001d9e7      0x62f Output/Debug/Obj/fer_biodaq_fusion_platform/hardfault_implementation.o
- .debug_line    0x000000000001e016      0x350 Output/Debug/Obj/fer_biodaq_fusion_platform/nrf_assert.o
- .debug_line    0x000000000001e366      0x6fc Output/Debug/Obj/fer_biodaq_fusion_platform/nrf_atfifo.o
- .debug_line    0x000000000001ea62      0x62a Output/Debug/Obj/fer_biodaq_fusion_platform/nrf_atomic.o
- .debug_line    0x000000000001f08c      0x9fb Output/Debug/Obj/fer_biodaq_fusion_platform/nrf_balloc.o
- .debug_line    0x000000000001fa87     0x2f52 Output/Debug/Obj/fer_biodaq_fusion_platform/nrf_cli.o
- .debug_line    0x00000000000229d9      0x47f Output/Debug/Obj/fer_biodaq_fusion_platform/nrf_fprintf.o
- .debug_line    0x0000000000022e58      0x77a Output/Debug/Obj/fer_biodaq_fusion_platform/nrf_fprintf_format.o
- .debug_line    0x00000000000235d2      0x7a1 Output/Debug/Obj/fer_biodaq_fusion_platform/nrf_fstorage.o
- .debug_line    0x0000000000023d73      0x78c Output/Debug/Obj/fer_biodaq_fusion_platform/nrf_memobj.o
- .debug_line    0x00000000000244ff      0xde5 Output/Debug/Obj/fer_biodaq_fusion_platform/nrf_queue.o
- .debug_line    0x00000000000252e4      0xcda Output/Debug/Obj/fer_biodaq_fusion_platform/task_manager.o
+.debug_line     0x0000000000000000    0x25fc7
+ .debug_line    0x0000000000000000      0x8d1 Output/Debug/Obj/fer_biodaq_fusion_platform/main.o
+ .debug_line    0x00000000000008d1       0x9a Output/Debug/Obj/fer_biodaq_fusion_platform/ses_startup_nrf52840.o
+ .debug_line    0x000000000000096b       0xb9 Output/Debug/Obj/fer_biodaq_fusion_platform/ses_startup_nrf_common.o
+ .debug_line    0x0000000000000a24     0x3b34 Output/Debug/Obj/fer_biodaq_fusion_platform/system_nrf52840.o
+ .debug_line    0x0000000000004558      0x17d Output/Debug/Obj/fer_biodaq_fusion_platform/thumb_crt0.o
+ .debug_line    0x00000000000046d5      0x8f1 Output/Debug/Obj/fer_biodaq_fusion_platform/nrf_drv_rng.o
+ .debug_line    0x0000000000004fc6      0x804 Output/Debug/Obj/fer_biodaq_fusion_platform/nrfx_atomic.o
+ .debug_line    0x00000000000057ca      0xc1c Output/Debug/Obj/fer_biodaq_fusion_platform/nrfx_clock.o
+ .debug_line    0x00000000000063e6     0x18e0 Output/Debug/Obj/fer_biodaq_fusion_platform/nrfx_gpiote.o
+ .debug_line    0x0000000000007cc6      0xf18 Output/Debug/Obj/fer_biodaq_fusion_platform/nrfx_i2s.o
+ .debug_line    0x0000000000008bde      0xe99 Output/Debug/Obj/fer_biodaq_fusion_platform/nrfx_pdm.o
+ .debug_line    0x0000000000009a77      0xc93 Output/Debug/Obj/fer_biodaq_fusion_platform/nrfx_power.o
+ .debug_line    0x000000000000a70a      0x85b Output/Debug/Obj/fer_biodaq_fusion_platform/nrfx_prs.o
+ .debug_line    0x000000000000af65     0x10ff Output/Debug/Obj/fer_biodaq_fusion_platform/nrfx_pwm.o
+ .debug_line    0x000000000000c064      0xd4a Output/Debug/Obj/fer_biodaq_fusion_platform/nrfx_qdec.o
+ .debug_line    0x000000000000cdae     0x11cf Output/Debug/Obj/fer_biodaq_fusion_platform/nrfx_qspi.o
+ .debug_line    0x000000000000df7d      0xa31 Output/Debug/Obj/fer_biodaq_fusion_platform/nrfx_rng.o
+ .debug_line    0x000000000000e9ae      0xd7c Output/Debug/Obj/fer_biodaq_fusion_platform/nrfx_rtc.o
+ .debug_line    0x000000000000f72a     0x1170 Output/Debug/Obj/fer_biodaq_fusion_platform/nrfx_saadc.o
+ .debug_line    0x000000000001089a     0x118c Output/Debug/Obj/fer_biodaq_fusion_platform/nrfx_spim.o
+ .debug_line    0x0000000000011a26      0xbe2 Output/Debug/Obj/fer_biodaq_fusion_platform/nrfx_swi.o
+ .debug_line    0x0000000000012608      0xf18 Output/Debug/Obj/fer_biodaq_fusion_platform/nrfx_timer.o
+ .debug_line    0x0000000000013520     0x5f77 Output/Debug/Obj/fer_biodaq_fusion_platform/nrfx_usbd.o
+ .debug_line    0x0000000000019497      0xa84 Output/Debug/Obj/fer_biodaq_fusion_platform/nrfx_wdt.o
+ .debug_line    0x0000000000019f1b      0x3cc Output/Debug/Obj/fer_biodaq_fusion_platform/app_error.o
+ .debug_line    0x000000000001a2e7      0x625 Output/Debug/Obj/fer_biodaq_fusion_platform/app_error_weak.o
+ .debug_line    0x000000000001a90c      0x4a4 Output/Debug/Obj/fer_biodaq_fusion_platform/app_util_platform.o
+ .debug_line    0x000000000001adb0      0xe74 Output/Debug/Obj/fer_biodaq_fusion_platform/drv_rtc.o
+ .debug_line    0x000000000001bc24     0x19da Output/Debug/Obj/fer_biodaq_fusion_platform/fds.o
+ .debug_line    0x000000000001d5fe      0x3f2 Output/Debug/Obj/fer_biodaq_fusion_platform/hardfault_handler_gcc.o
+ .debug_line    0x000000000001d9f0      0x62f Output/Debug/Obj/fer_biodaq_fusion_platform/hardfault_implementation.o
+ .debug_line    0x000000000001e01f      0x350 Output/Debug/Obj/fer_biodaq_fusion_platform/nrf_assert.o
+ .debug_line    0x000000000001e36f      0x6fc Output/Debug/Obj/fer_biodaq_fusion_platform/nrf_atfifo.o
+ .debug_line    0x000000000001ea6b      0x62a Output/Debug/Obj/fer_biodaq_fusion_platform/nrf_atomic.o
+ .debug_line    0x000000000001f095      0x9fb Output/Debug/Obj/fer_biodaq_fusion_platform/nrf_balloc.o
+ .debug_line    0x000000000001fa90     0x2f52 Output/Debug/Obj/fer_biodaq_fusion_platform/nrf_cli.o
+ .debug_line    0x00000000000229e2      0x47f Output/Debug/Obj/fer_biodaq_fusion_platform/nrf_fprintf.o
+ .debug_line    0x0000000000022e61      0x77a Output/Debug/Obj/fer_biodaq_fusion_platform/nrf_fprintf_format.o
+ .debug_line    0x00000000000235db      0x7a1 Output/Debug/Obj/fer_biodaq_fusion_platform/nrf_fstorage.o
+ .debug_line    0x0000000000023d7c      0x78c Output/Debug/Obj/fer_biodaq_fusion_platform/nrf_memobj.o
+ .debug_line    0x0000000000024508      0xde5 Output/Debug/Obj/fer_biodaq_fusion_platform/nrf_queue.o
+ .debug_line    0x00000000000252ed      0xcda Output/Debug/Obj/fer_biodaq_fusion_platform/task_manager.o
 
-.debug_str      0x0000000000000000    0xb7204
- .debug_str     0x0000000000000000    0x8e46e Output/Debug/Obj/fer_biodaq_fusion_platform/main.o
-                                      0x90a0c (size before relaxing)
- .debug_str     0x000000000008e46e       0x68 Output/Debug/Obj/fer_biodaq_fusion_platform/ses_startup_nrf52840.o
+.debug_str      0x0000000000000000    0xb720c
+ .debug_str     0x0000000000000000    0x8e476 Output/Debug/Obj/fer_biodaq_fusion_platform/main.o
+                                      0x90a14 (size before relaxing)
+ .debug_str     0x000000000008e476       0x68 Output/Debug/Obj/fer_biodaq_fusion_platform/ses_startup_nrf52840.o
                                          0xab (size before relaxing)
- .debug_str     0x000000000008e4d6       0x5e Output/Debug/Obj/fer_biodaq_fusion_platform/ses_startup_nrf_common.o
+ .debug_str     0x000000000008e4de       0x5e Output/Debug/Obj/fer_biodaq_fusion_platform/ses_startup_nrf_common.o
                                          0xad (size before relaxing)
- .debug_str     0x000000000008e534     0x9ce8 Output/Debug/Obj/fer_biodaq_fusion_platform/system_nrf52840.o
+ .debug_str     0x000000000008e53c     0x9ce8 Output/Debug/Obj/fer_biodaq_fusion_platform/system_nrf52840.o
                                       0x81bf1 (size before relaxing)
- .debug_str     0x000000000009821c       0x50 Output/Debug/Obj/fer_biodaq_fusion_platform/thumb_crt0.o
+ .debug_str     0x0000000000098224       0x50 Output/Debug/Obj/fer_biodaq_fusion_platform/thumb_crt0.o
                                          0x9f (size before relaxing)
- .debug_str     0x000000000009826c     0x4820 Output/Debug/Obj/fer_biodaq_fusion_platform/nrf_drv_rng.o
+ .debug_str     0x0000000000098274     0x4820 Output/Debug/Obj/fer_biodaq_fusion_platform/nrf_drv_rng.o
                                       0x92f18 (size before relaxing)
- .debug_str     0x000000000009ca8c      0x76d Output/Debug/Obj/fer_biodaq_fusion_platform/nrfx_atomic.o
+ .debug_str     0x000000000009ca94      0x76d Output/Debug/Obj/fer_biodaq_fusion_platform/nrfx_atomic.o
                                       0x8ee27 (size before relaxing)
- .debug_str     0x000000000009d1f9      0xdbe Output/Debug/Obj/fer_biodaq_fusion_platform/nrfx_clock.o
+ .debug_str     0x000000000009d201      0xdbe Output/Debug/Obj/fer_biodaq_fusion_platform/nrfx_clock.o
                                       0x9247d (size before relaxing)
- .debug_str     0x000000000009dfb7     0x1939 Output/Debug/Obj/fer_biodaq_fusion_platform/nrfx_gpiote.o
+ .debug_str     0x000000000009dfbf     0x1939 Output/Debug/Obj/fer_biodaq_fusion_platform/nrfx_gpiote.o
                                       0x93847 (size before relaxing)
- .debug_str     0x000000000009f8f0      0xbe0 Output/Debug/Obj/fer_biodaq_fusion_platform/nrfx_i2s.o
+ .debug_str     0x000000000009f8f8      0xbe0 Output/Debug/Obj/fer_biodaq_fusion_platform/nrfx_i2s.o
                                       0x92b39 (size before relaxing)
- .debug_str     0x00000000000a04d0      0x81d Output/Debug/Obj/fer_biodaq_fusion_platform/nrfx_pdm.o
+ .debug_str     0x00000000000a04d8      0x81d Output/Debug/Obj/fer_biodaq_fusion_platform/nrfx_pdm.o
                                       0x927ad (size before relaxing)
- .debug_str     0x00000000000a0ced      0xde6 Output/Debug/Obj/fer_biodaq_fusion_platform/nrfx_power.o
+ .debug_str     0x00000000000a0cf5      0xde6 Output/Debug/Obj/fer_biodaq_fusion_platform/nrfx_power.o
                                       0x8fcac (size before relaxing)
- .debug_str     0x00000000000a1ad3      0x4e3 Output/Debug/Obj/fer_biodaq_fusion_platform/nrfx_prs.o
+ .debug_str     0x00000000000a1adb      0x4e3 Output/Debug/Obj/fer_biodaq_fusion_platform/nrfx_prs.o
                                       0x91dd3 (size before relaxing)
- .debug_str     0x00000000000a1fb6      0xe68 Output/Debug/Obj/fer_biodaq_fusion_platform/nrfx_pwm.o
+ .debug_str     0x00000000000a1fbe      0xe68 Output/Debug/Obj/fer_biodaq_fusion_platform/nrfx_pwm.o
                                       0x92e1f (size before relaxing)
- .debug_str     0x00000000000a2e1e      0xabd Output/Debug/Obj/fer_biodaq_fusion_platform/nrfx_qdec.o
+ .debug_str     0x00000000000a2e26      0xabd Output/Debug/Obj/fer_biodaq_fusion_platform/nrfx_qdec.o
                                       0x929d4 (size before relaxing)
- .debug_str     0x00000000000a38db     0x10ad Output/Debug/Obj/fer_biodaq_fusion_platform/nrfx_qspi.o
+ .debug_str     0x00000000000a38e3     0x10ad Output/Debug/Obj/fer_biodaq_fusion_platform/nrfx_qspi.o
                                       0x9010b (size before relaxing)
- .debug_str     0x00000000000a4988      0x1eb Output/Debug/Obj/fer_biodaq_fusion_platform/nrfx_rng.o
+ .debug_str     0x00000000000a4990      0x1eb Output/Debug/Obj/fer_biodaq_fusion_platform/nrfx_rng.o
                                       0x91e1f (size before relaxing)
- .debug_str     0x00000000000a4b73      0xaf6 Output/Debug/Obj/fer_biodaq_fusion_platform/nrfx_rtc.o
+ .debug_str     0x00000000000a4b7b      0xaf6 Output/Debug/Obj/fer_biodaq_fusion_platform/nrfx_rtc.o
                                       0x92692 (size before relaxing)
- .debug_str     0x00000000000a5669     0x1867 Output/Debug/Obj/fer_biodaq_fusion_platform/nrfx_saadc.o
+ .debug_str     0x00000000000a5671     0x1867 Output/Debug/Obj/fer_biodaq_fusion_platform/nrfx_saadc.o
                                       0x93515 (size before relaxing)
- .debug_str     0x00000000000a6ed0      0x78e Output/Debug/Obj/fer_biodaq_fusion_platform/nrfx_spim.o
+ .debug_str     0x00000000000a6ed8      0x78e Output/Debug/Obj/fer_biodaq_fusion_platform/nrfx_spim.o
                                       0x932a0 (size before relaxing)
- .debug_str     0x00000000000a765e      0x63a Output/Debug/Obj/fer_biodaq_fusion_platform/nrfx_swi.o
+ .debug_str     0x00000000000a7666      0x63a Output/Debug/Obj/fer_biodaq_fusion_platform/nrfx_swi.o
                                       0x921e6 (size before relaxing)
- .debug_str     0x00000000000a7c98     0x114d Output/Debug/Obj/fer_biodaq_fusion_platform/nrfx_timer.o
+ .debug_str     0x00000000000a7ca0     0x114d Output/Debug/Obj/fer_biodaq_fusion_platform/nrfx_timer.o
                                       0x92d9f (size before relaxing)
- .debug_str     0x00000000000a8de5     0x28fe Output/Debug/Obj/fer_biodaq_fusion_platform/nrfx_usbd.o
+ .debug_str     0x00000000000a8ded     0x28fe Output/Debug/Obj/fer_biodaq_fusion_platform/nrfx_usbd.o
                                       0x9dcc3 (size before relaxing)
- .debug_str     0x00000000000ab6e3      0x4ea Output/Debug/Obj/fer_biodaq_fusion_platform/nrfx_wdt.o
+ .debug_str     0x00000000000ab6eb      0x4ea Output/Debug/Obj/fer_biodaq_fusion_platform/nrfx_wdt.o
                                       0x92048 (size before relaxing)
- .debug_str     0x00000000000abbcd      0x12d Output/Debug/Obj/fer_biodaq_fusion_platform/app_error.o
+ .debug_str     0x00000000000abbd5      0x12d Output/Debug/Obj/fer_biodaq_fusion_platform/app_error.o
                                       0x786b9 (size before relaxing)
- .debug_str     0x00000000000abcfa      0x4fc Output/Debug/Obj/fer_biodaq_fusion_platform/app_error_weak.o
+ .debug_str     0x00000000000abd02      0x4fc Output/Debug/Obj/fer_biodaq_fusion_platform/app_error_weak.o
                                       0x8a6ec (size before relaxing)
- .debug_str     0x00000000000ac1f6      0x1c5 Output/Debug/Obj/fer_biodaq_fusion_platform/app_util_platform.o
+ .debug_str     0x00000000000ac1fe      0x1c5 Output/Debug/Obj/fer_biodaq_fusion_platform/app_util_platform.o
                                       0x78f27 (size before relaxing)
- .debug_str     0x00000000000ac3bb      0x5f8 Output/Debug/Obj/fer_biodaq_fusion_platform/drv_rtc.o
+ .debug_str     0x00000000000ac3c3      0x5f8 Output/Debug/Obj/fer_biodaq_fusion_platform/drv_rtc.o
                                       0x92545 (size before relaxing)
- .debug_str     0x00000000000ac9b3     0x1a15 Output/Debug/Obj/fer_biodaq_fusion_platform/fds.o
+ .debug_str     0x00000000000ac9bb     0x1a15 Output/Debug/Obj/fer_biodaq_fusion_platform/fds.o
                                       0x8a15e (size before relaxing)
- .debug_str     0x00000000000ae3c8       0x9f Output/Debug/Obj/fer_biodaq_fusion_platform/hardfault_handler_gcc.o
+ .debug_str     0x00000000000ae3d0       0x9f Output/Debug/Obj/fer_biodaq_fusion_platform/hardfault_handler_gcc.o
                                       0x872cf (size before relaxing)
- .debug_str     0x00000000000ae467      0x132 Output/Debug/Obj/fer_biodaq_fusion_platform/hardfault_implementation.o
+ .debug_str     0x00000000000ae46f      0x132 Output/Debug/Obj/fer_biodaq_fusion_platform/hardfault_implementation.o
                                       0x8a791 (size before relaxing)
- .debug_str     0x00000000000ae599       0x5b Output/Debug/Obj/fer_biodaq_fusion_platform/nrf_assert.o
+ .debug_str     0x00000000000ae5a1       0x5b Output/Debug/Obj/fer_biodaq_fusion_platform/nrf_assert.o
                                       0x786cd (size before relaxing)
- .debug_str     0x00000000000ae5f4      0x179 Output/Debug/Obj/fer_biodaq_fusion_platform/nrf_atfifo.o
+ .debug_str     0x00000000000ae5fc      0x179 Output/Debug/Obj/fer_biodaq_fusion_platform/nrf_atfifo.o
                                       0x8a043 (size before relaxing)
- .debug_str     0x00000000000ae76d      0x698 Output/Debug/Obj/fer_biodaq_fusion_platform/nrf_atomic.o
+ .debug_str     0x00000000000ae775      0x698 Output/Debug/Obj/fer_biodaq_fusion_platform/nrf_atomic.o
                                       0x879af (size before relaxing)
- .debug_str     0x00000000000aee05     0x3551 Output/Debug/Obj/fer_biodaq_fusion_platform/nrf_balloc.o
+ .debug_str     0x00000000000aee0d     0x3551 Output/Debug/Obj/fer_biodaq_fusion_platform/nrf_balloc.o
                                       0x8f3d0 (size before relaxing)
- .debug_str     0x00000000000b2356     0x3c1e Output/Debug/Obj/fer_biodaq_fusion_platform/nrf_cli.o
+ .debug_str     0x00000000000b235e     0x3c1e Output/Debug/Obj/fer_biodaq_fusion_platform/nrf_cli.o
                                       0x999ac (size before relaxing)
- .debug_str     0x00000000000b5f74       0x53 Output/Debug/Obj/fer_biodaq_fusion_platform/nrf_fprintf.o
+ .debug_str     0x00000000000b5f7c       0x53 Output/Debug/Obj/fer_biodaq_fusion_platform/nrf_fprintf.o
                                       0x87561 (size before relaxing)
- .debug_str     0x00000000000b5fc7      0x527 Output/Debug/Obj/fer_biodaq_fusion_platform/nrf_fprintf_format.o
+ .debug_str     0x00000000000b5fcf      0x527 Output/Debug/Obj/fer_biodaq_fusion_platform/nrf_fprintf_format.o
                                       0x87a5b (size before relaxing)
- .debug_str     0x00000000000b64ee      0x1a1 Output/Debug/Obj/fer_biodaq_fusion_platform/nrf_fstorage.o
+ .debug_str     0x00000000000b64f6      0x1a1 Output/Debug/Obj/fer_biodaq_fusion_platform/nrf_fstorage.o
                                       0x89e22 (size before relaxing)
- .debug_str     0x00000000000b668f      0x1c1 Output/Debug/Obj/fer_biodaq_fusion_platform/nrf_memobj.o
+ .debug_str     0x00000000000b6697      0x1c1 Output/Debug/Obj/fer_biodaq_fusion_platform/nrf_memobj.o
                                       0x895f2 (size before relaxing)
- .debug_str     0x00000000000b6850      0x242 Output/Debug/Obj/fer_biodaq_fusion_platform/nrf_queue.o
+ .debug_str     0x00000000000b6858      0x242 Output/Debug/Obj/fer_biodaq_fusion_platform/nrf_queue.o
                                       0x8f575 (size before relaxing)
- .debug_str     0x00000000000b6a92      0x772 Output/Debug/Obj/fer_biodaq_fusion_platform/task_manager.o
+ .debug_str     0x00000000000b6a9a      0x772 Output/Debug/Obj/fer_biodaq_fusion_platform/task_manager.o
                                       0x8f943 (size before relaxing)
 
 .comment        0x0000000000000000       0x69
