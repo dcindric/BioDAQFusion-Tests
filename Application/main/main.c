@@ -15,6 +15,12 @@ static const nrfx_spim_t spim = NRFX_SPIM_INSTANCE(SPIM_INSTANCE);
 #define BIOPOT_RESET   NRF_GPIO_PIN_MAP(1, 12)  //P1.12
 
 #define ADS1292_REG_ID  0x00  // Device ID register address
+
+#define ADS1292_CONFIG1 0x01  //CONFIG1 register
+#define ADS1292_CONFIG2 0x02  //CONFIG2 register
+#define ADS1292_LOFF    0x03
+#define ADS1292_GPIO    0x0B
+
 #define SPI_BUFFER_SIZE  2
 
 uint8_t tx_buf[SPI_BUFFER_SIZE]; // Buffer for data to send
@@ -32,7 +38,7 @@ void spim_init(void)
     spim_config.mosi_pin = PIN_SPI_MOSI;
     spim_config.miso_pin = PIN_SPI_MISO;
     spim_config.ss_pin   = NRFX_SPIM_PIN_NOT_USED; // We'll control CS manually
-    spim_config.frequency = NRF_SPIM_FREQ_250K;
+    spim_config.frequency = NRF_SPIM_FREQ_125K;
     spim_config.mode = NRF_SPIM_MODE_1; // CPOL = 0, CPHA = 1
     spim_config.bit_order = NRF_SPIM_BIT_ORDER_MSB_FIRST;
 
@@ -42,7 +48,7 @@ void spim_init(void)
 void ads1292_read_device_id(void)
 {
     // Activate chip select (CS)
-    nrf_gpio_pin_set(BIOPOT_START);
+    //nrf_gpio_pin_set(BIOPOT_START);
     nrf_gpio_pin_clear(PIN_SPI_CS);
 
     // Prepare the command to read Device ID register (0x20 + register address)
@@ -57,7 +63,7 @@ void ads1292_read_device_id(void)
     nrf_delay_ms(100);
 
     // Deactivate chip select (CS)
-    nrf_gpio_pin_clear(BIOPOT_START);
+    //nrf_gpio_pin_clear(BIOPOT_START);
     nrf_gpio_pin_set(PIN_SPI_CS);
    
 
@@ -79,7 +85,11 @@ int main(void)
     //Initialize BIOPOT_RESET pin and set it from low to high, activating the ADS1292
     nrf_gpio_cfg_output(BIOPOT_RESET);
     nrf_gpio_pin_clear(BIOPOT_RESET);
+    nrf_delay_ms(1000);
     nrf_gpio_pin_set(BIOPOT_RESET);
+    nrf_delay_ms(1000);
+    nrf_gpio_pin_set(BIOPOT_START);
+    nrf_delay_ms(1000);
 
     // Initialize SPIM
     spim_init();
