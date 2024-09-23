@@ -45,6 +45,25 @@ void spim_init(void)
     nrfx_spim_init(&spim, &spim_config, spim_event_handler, NULL);
 }
 
+void ads1292_wake_up(void)
+{
+    // Activate CS to wake up the device
+    nrf_gpio_pin_clear(PIN_SPI_CS);
+    
+    // Send WAKEUP command (0x02)
+    tx_buf[0] = 0x02;
+    tx_buf[1] = 0x00;  // Dummy byte for the second part of the transfer
+
+    nrfx_spim_xfer_desc_t xfer_desc = NRFX_SPIM_XFER_TRX(tx_buf, SPI_BUFFER_SIZE, rx_buf, SPI_BUFFER_SIZE);
+    nrfx_spim_xfer(&spim, &xfer_desc, 0);
+
+    nrf_delay_us(50);  // Delay after wake-up
+    nrf_gpio_pin_set(PIN_SPI_CS);  // De-assert CS
+
+    // Wait for the ADS1292 to wake up
+    nrf_delay_ms(10);
+}
+
 void ads1292_read_device_id(void)
 {
     // Activate chip select (CS)
@@ -56,10 +75,19 @@ void ads1292_read_device_id(void)
 
     // Perform SPIM transaction
     nrfx_spim_xfer_desc_t xfer_desc = NRFX_SPIM_XFER_TRX(tx_buf, SPI_BUFFER_SIZE, rx_buf, SPI_BUFFER_SIZE);
-    nrfx_spim_xfer(&spim, &xfer_desc, 0);
+    nrfx_err_t spi_err_code = nrfx_spim_xfer(&spim, &xfer_desc, 0);
+
+    if (spi_err_code != NRFX_SUCCESS)
+    {
+      while(true)
+      {
+      }
+    }
+
+    //Register value should be in rx_buf[1]!
 
     // Wait for a short period (depends on SPI speed)
-    nrf_delay_ms(100);
+    nrf_delay_ms(10);
 
     // Deactivate chip select (CS)
     nrf_gpio_pin_set(PIN_SPI_CS);
@@ -78,22 +106,26 @@ int main(void)
     //Initialize BIOPOT_RESET pin and set it from low to high, activating the ADS1292
     nrf_gpio_cfg_output(BIOPOT_RESET);
     nrf_gpio_pin_clear(BIOPOT_RESET);
-    nrf_gpio_pin_set(BIOPOT_RESET);
 
-    nrf_delay_ms(1000);
+    nrf_delay_ms(1);
+    nrf_gpio_pin_set(BIOPOT_RESET);
+    
+    nrf_delay_ms(100);
 
     nrf_gpio_pin_set(BIOPOT_START);
-    nrf_delay_ms(1000);
+    nrf_delay_ms(100);
 
     // Initialize SPIM
     spim_init();
-    nrf_delay_ms(1000);
+    nrf_delay_ms(100);
+
+    //ads1292_wake_up();
 
     while (true)
     {
         // Main loop
         // Read Device ID from ADS1292
         ads1292_read_device_id();
-        nrf_delay_ms(1000);
+        nrf_delay_ms(100);
     }
 }
