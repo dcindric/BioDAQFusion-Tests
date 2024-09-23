@@ -3,13 +3,13 @@
 #include <boards.h>
 #include <stdio.h>
 
-#define SPIM_INSTANCE  2 // SPIM instance index
+#define SPIM_INSTANCE  1 // SPIM instance index
 static const nrfx_spim_t spim = NRFX_SPIM_INSTANCE(SPIM_INSTANCE);
 
-#define PIN_SPI_MISO   NRF_GPIO_PIN_MAP(0, 26) // P0.26
-#define PIN_SPI_MOSI   NRF_GPIO_PIN_MAP(0, 27) // P0.27
-#define PIN_SPI_SCLK   NRF_GPIO_PIN_MAP(0, 4)  // P0.04
-#define PIN_SPI_CS     NRF_GPIO_PIN_MAP(0, 3)  // P0.03
+#define PIN_SPI_MISO   NRF_GPIO_PIN_MAP(0, 15) // P0.26
+#define PIN_SPI_MOSI   NRF_GPIO_PIN_MAP(0, 16) // P0.27
+#define PIN_SPI_SCLK   NRF_GPIO_PIN_MAP(0, 17)  // P0.04
+#define PIN_SPI_CS     NRF_GPIO_PIN_MAP(0, 8)  // P0.03, IMU1_CS
 
 #define BIOPOT_START   NRF_GPIO_PIN_MAP(1, 11)  //P1.11
 #define BIOPOT_RESET   NRF_GPIO_PIN_MAP(1, 12)  //P1.12
@@ -38,7 +38,7 @@ void spim_init(void)
     spim_config.mosi_pin = PIN_SPI_MOSI;
     spim_config.miso_pin = PIN_SPI_MISO;
     spim_config.ss_pin   = NRFX_SPIM_PIN_NOT_USED; // We'll control CS manually
-    spim_config.frequency = NRF_SPIM_FREQ_125K;
+    spim_config.frequency = NRF_SPIM_FREQ_250K;
     spim_config.mode = NRF_SPIM_MODE_1; // CPOL = 0, CPHA = 1
     spim_config.bit_order = NRF_SPIM_BIT_ORDER_MSB_FIRST;
 
@@ -93,39 +93,61 @@ void ads1292_read_device_id(void)
     nrf_gpio_pin_set(PIN_SPI_CS);
 }
 
+
+void bmi323_read_register(uint8_t reg_addr, uint8_t* reg_data)
+{
+    nrf_gpio_pin_clear(PIN_SPI_CS);
+    nrf_delay_us(50);
+
+    tx_buf[0] = reg_addr | 0x80;  // Set MSB for read operation
+    tx_buf[1] = 0x00;             // Dummy byte to receive data
+
+    nrfx_spim_xfer_desc_t xfer_desc = NRFX_SPIM_XFER_TRX(tx_buf, SPI_BUFFER_SIZE, rx_buf, SPI_BUFFER_SIZE);
+    nrfx_spim_xfer(&spim, &xfer_desc, 0);
+
+    nrf_delay_us(500);
+    nrf_gpio_pin_set(PIN_SPI_CS);
+
+    *reg_data = rx_buf[1];
+}
+
+void lsm6dsox_read_register(uint8_t reg_addr, uint8_t* reg_data)
+{
+    nrf_gpio_pin_clear(PIN_SPI_CS);
+    nrf_delay_us(50);
+
+    tx_buf[0] = reg_addr | 0x80;  // Set MSB for read operation (for LSM6DSOX)
+    tx_buf[1] = 0x00;             // Dummy byte to receive data
+
+    nrfx_spim_xfer_desc_t xfer_desc = NRFX_SPIM_XFER_TRX(tx_buf, SPI_BUFFER_SIZE, rx_buf, SPI_BUFFER_SIZE);
+    nrfx_spim_xfer(&spim, &xfer_desc, 0);
+
+    nrf_delay_ms(1);
+    nrf_gpio_pin_set(PIN_SPI_CS);
+
+    *reg_data = rx_buf[1];
+}
+
+
 int main(void)
 {
     // Initialize GPIO for chip select
     nrf_gpio_cfg_output(PIN_SPI_CS);
     nrf_gpio_pin_set(PIN_SPI_CS);  // Initially de-assert CS
 
-    //Initialize BIOPOT START pin, which is an output from MCU perspective
-    nrf_gpio_cfg_output(BIOPOT_START);
-    nrf_gpio_pin_clear(BIOPOT_START);
-
-    //Initialize BIOPOT_RESET pin and set it from low to high, activating the ADS1292
-    nrf_gpio_cfg_output(BIOPOT_RESET);
-    nrf_gpio_pin_clear(BIOPOT_RESET);
-
-    nrf_delay_ms(1);
-    nrf_gpio_pin_set(BIOPOT_RESET);
-    
-    nrf_delay_ms(100);
-
-    nrf_gpio_pin_set(BIOPOT_START);
-    nrf_delay_ms(100);
-
     // Initialize SPIM
     spim_init();
     nrf_delay_ms(100);
 
     //ads1292_wake_up();
+  
+    uint8_t reg_data = 0;
 
     while (true)
     {
-        // Main loop
-        // Read Device ID from ADS1292
-        ads1292_read_device_id();
+
+        bmi323_read_register(0x00, &reg_data);  // Read ID register (0x00)
+        //lsm6dsox_read_register(0x0F, &reg_data);
         nrf_delay_ms(100);
     }
 }
