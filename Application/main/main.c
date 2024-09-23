@@ -3,6 +3,8 @@
 #include <boards.h>
 #include <stdio.h>
 
+#include <nrf_drv_spi.h>
+
 #define SPIM_INSTANCE  2 // SPIM instance index
 static const nrfx_spim_t spim = NRFX_SPIM_INSTANCE(SPIM_INSTANCE);
 
@@ -105,9 +107,16 @@ int main(void)
 
     //Initialize BIOPOT_RESET pin and set it from low to high, activating the ADS1292
     nrf_gpio_cfg_output(BIOPOT_RESET);
+    //nrf_gpio_pin_clear(BIOPOT_RESET);
+
+    nrf_delay_ms(10);
+    nrf_gpio_pin_set(BIOPOT_RESET);
+    nrf_delay_ms(10);
+
+    nrf_delay_ms(10);
     nrf_gpio_pin_clear(BIOPOT_RESET);
 
-    nrf_delay_ms(1);
+    nrf_delay_ms(10);
     nrf_gpio_pin_set(BIOPOT_RESET);
     
     nrf_delay_ms(100);
@@ -126,6 +135,7 @@ int main(void)
         // Main loop
         // Read Device ID from ADS1292
         ads1292_read_device_id();
+
         nrf_delay_ms(100);
     }
 }
