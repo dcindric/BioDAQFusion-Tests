@@ -48,7 +48,6 @@ void spim_init(void)
 void ads1292_read_device_id(void)
 {
     // Activate chip select (CS)
-    //nrf_gpio_pin_set(BIOPOT_START);
     nrf_gpio_pin_clear(PIN_SPI_CS);
 
     // Prepare the command to read Device ID register (0x20 + register address)
@@ -63,13 +62,7 @@ void ads1292_read_device_id(void)
     nrf_delay_ms(100);
 
     // Deactivate chip select (CS)
-    //nrf_gpio_pin_clear(BIOPOT_START);
     nrf_gpio_pin_set(PIN_SPI_CS);
-   
-
-
-    // Device ID will be in rx_buf[1]
-    //printf("Device ID: 0x%02X\n", rx_buf[1]);
 }
 
 int main(void)
@@ -85,16 +78,16 @@ int main(void)
     //Initialize BIOPOT_RESET pin and set it from low to high, activating the ADS1292
     nrf_gpio_cfg_output(BIOPOT_RESET);
     nrf_gpio_pin_clear(BIOPOT_RESET);
-    nrf_delay_ms(1000);
     nrf_gpio_pin_set(BIOPOT_RESET);
+
     nrf_delay_ms(1000);
+
     nrf_gpio_pin_set(BIOPOT_START);
     nrf_delay_ms(1000);
 
     // Initialize SPIM
     spim_init();
-
-    
+    nrf_delay_ms(1000);
 
     while (true)
     {

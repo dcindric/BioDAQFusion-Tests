@@ -3,8 +3,7 @@
  <Bookmarks/>
  <Breakpoints groups="Breakpoints" active_group="Breakpoints">
   <BreakpointListItem trigger="" line="54" counter="0" hardwareBreakpoint="" isFunctionBreakpoint="false" action="" expression="" group="Breakpoints" type="Breakpoint" state="4" filename="i2c_driver.c" useHWbreakpoint="false"/>
-  <BreakpointListItem trigger="" line="25" counter="0" hardwareBreakpoint="" isFunctionBreakpoint="false" action="" expression="" group="Breakpoints" type="Breakpoint" state="2" filename="../../../main/main.c" useHWbreakpoint="false"/>
-  <BreakpointListItem trigger="" line="27" counter="0" hardwareBreakpoint="" isFunctionBreakpoint="false" action="" expression="" group="Breakpoints" type="Breakpoint" state="2" filename="../../../main/main.c" useHWbreakpoint="false"/>
+  <BreakpointListItem trigger="" line="103" counter="0" hardwareBreakpoint="" isFunctionBreakpoint="false" action="" expression="" group="Breakpoints" type="Breakpoint" state="2" filename="../../../main/main.c" useHWbreakpoint="false"/>
   <Exceptions set="MemManage;UsageFault_Coprocessor;UsageFault_CheckingError;UsageFault_StateError;BusFault;ExceptionEntryReturnFault;HardFault"/>
  </Breakpoints>
  <ExecutionProfileWindow/>
@@ -53,7 +52,7 @@
  <Watch1>
   <Watches active="1" update="Never">
    <Watchpoint expression="data_to_read" name="data_to_read" radix="-1" linenumber="14" filename="i2c_driver.c"/>
-   <Watchpoint expression="rx_buf" name="rx_buf" radix="-1" linenumber="19" filename="../../../main/main.c"/>
+   <Watchpoint expression="rx_buf" name="rx_buf" radix="16" linenumber="172" filename="../../../main/main.c"/>
   </Watches>
  </Watch1>
  <Watch2>
@@ -66,10 +65,11 @@
   <Watches active="0" update="Never"/>
  </Watch4>
  <Files>
-  <SessionOpenFile windowGroup="DockEditLeft" x="0" y="24" useTextEdit="1" path="../../../main/main.c" left="0" selected="1" top="0" codecName="Default"/>
+  <SessionOpenFile windowGroup="DockEditLeft" x="27" y="85" useTextEdit="1" path="../../../main/main.c" left="0" selected="1" top="231" codecName="Default"/>
   <SessionOpenFile windowGroup="DockEditLeft" x="8" y="160" useTextEdit="1" openedFrom="C:/Users/Dino/Desktop/BioDAQ Fusion/Application/pca10056/blank/ses/i2c_driver.c" path="../../../../nRF5_SDK_17.1.0/components/libraries/util/app_error.h" left="0" top="143" codecName="Default"/>
   <SessionOpenFile windowGroup="DockEditLeft" x="37" y="81" useTextEdit="1" path="../../../../nRF5_SDK_17.1.0/modules/nrfx/drivers/include/nrfx_spi.h" left="0" top="59" codecName="Default"/>
-  <SessionOpenFile windowGroup="DockEditLeft" x="8" y="196" useTextEdit="1" openedFrom="C:/Users/Dino/Desktop/BioDAQ Fusion/Application/main/main.c" path="../../../../nRF5_SDK_17.1.0/modules/nrfx/drivers/include/nrfx_spim.h" left="0" top="178" codecName="Default"/>
+  <SessionOpenFile windowGroup="DockEditLeft" x="8" y="147" useTextEdit="1" openedFrom="C:/Users/Dino/Desktop/BioDAQ Fusion/Application/main/main.c" path="../../../../nRF5_SDK_17.1.0/modules/nrfx/drivers/include/nrfx_spim.h" left="0" top="130" codecName="Default"/>
+  <SessionOpenFile windowGroup="DockEditLeft" x="4" y="157" useTextEdit="1" openedFrom="C:/Users/Dino/Desktop/BioDAQ Fusion/Application/main/main.c" path="../../../../nRF5_SDK_17.1.0/modules/nrfx/hal/nrf_spim.h" left="0" top="130" codecName="Default"/>
  </Files>
- <EMStudioWindow activeProject="fer_biodaq_fusion_platform" fileDialogDefaultFilter="*.*" autoConnectTarget="J-Link" buildConfiguration="Debug" sessionSettings="" debugSearchFileMap="" fileDialogInitialDirectory="C:/Users/Dino/Desktop/BioDAQ Fusion/Application/pca10056/blank/config" debugSearchPath="" autoConnectCapabilities="3711"/>
+ <EMStudioWindow activeProject="fer_biodaq_fusion_platform" fileDialogDefaultFilter="*.*" autoConnectTarget="J-Link" buildConfiguration="Debug" sessionSettings="" debugSearchFileMap="" fileDialogInitialDirectory="C:/Users/Dino/Desktop/BioDAQ Fusion/Application/pca10056/blank/config" debugSearchPath="" autoConnectCapabilities="3199"/>
 </session>
