@@ -1,141 +1,107 @@
-#include <nrfx_spim.h>
-#include <nrf_delay.h>
-#include <boards.h>
+#include "nrf_drv_twi.h"
+#include "nrf_delay.h"
 #include <stdio.h>
 
-#include <nrf_drv_spi.h>
+#define I2C_INSTANCE_ID 0
+static const nrf_drv_twi_t m_twi = NRF_DRV_TWI_INSTANCE(I2C_INSTANCE_ID);
 
-#define SPIM_INSTANCE  2 // SPIM instance index
-static const nrfx_spim_t spim = NRFX_SPIM_INSTANCE(SPIM_INSTANCE);
+#define TMP117_I2C_ADDR      0x48  // TMP117 I2C address (default)
+#define TMP117_REG_DEVICE_ID 0x0F  // Device ID register
 
-#define PIN_SPI_MISO   NRF_GPIO_PIN_MAP(0, 26) // P0.26
-#define PIN_SPI_MOSI   NRF_GPIO_PIN_MAP(0, 27) // P0.27
-#define PIN_SPI_SCLK   NRF_GPIO_PIN_MAP(0, 4)  // P0.04
-#define PIN_SPI_CS     NRF_GPIO_PIN_MAP(0, 3)  // P0.03
+/**
+ * @brief Initialize I2C (TWI) on P0.19 (SCL) and P0.20 (SDA)
+ */
+void i2c_init(void) {
+    nrf_drv_twi_config_t twi_config = {
+        .scl                = 19,  // P0.19 as SCL
+        .sda                = 20,  // P0.20 as SDA
+        .frequency          = NRF_DRV_TWI_FREQ_100K, // 100 kHz
+        .interrupt_priority = APP_IRQ_PRIORITY_HIGH,
+        .clear_bus_init     = false
+    };
 
-#define BIOPOT_START   NRF_GPIO_PIN_MAP(1, 11)  //P1.11
-#define BIOPOT_RESET   NRF_GPIO_PIN_MAP(1, 12)  //P1.12
+    // Initialize the I2C driver
+    ret_code_t err_code = nrf_drv_twi_init(&m_twi, &twi_config, NULL, NULL);
+    APP_ERROR_CHECK(err_code);
 
-#define ADS1292_REG_ID  0x00  // Device ID register address
-
-#define ADS1292_CONFIG1 0x01  //CONFIG1 register
-#define ADS1292_CONFIG2 0x02  //CONFIG2 register
-#define ADS1292_LOFF    0x03
-#define ADS1292_GPIO    0x0B
-
-#define SPI_BUFFER_SIZE  2
-
-uint8_t tx_buf[SPI_BUFFER_SIZE]; // Buffer for data to send
-uint8_t rx_buf[SPI_BUFFER_SIZE]; // Buffer for data to receive
-
-void spim_event_handler(nrfx_spim_evt_t const * p_event, void * p_context)
-{
-    // Handle SPIM events (optional)
+    // Enable the I2C instance
+    nrf_drv_twi_enable(&m_twi);
 }
 
-void spim_init(void)
-{
-    nrfx_spim_config_t spim_config = NRFX_SPIM_DEFAULT_CONFIG;
-    spim_config.sck_pin  = PIN_SPI_SCLK;
-    spim_config.mosi_pin = PIN_SPI_MOSI;
-    spim_config.miso_pin = PIN_SPI_MISO;
-    spim_config.ss_pin   = NRFX_SPIM_PIN_NOT_USED; // We'll control CS manually
-    spim_config.frequency = NRF_SPIM_FREQ_125K;
-    spim_config.mode = NRF_SPIM_MODE_1; // CPOL = 0, CPHA = 1
-    spim_config.bit_order = NRF_SPIM_BIT_ORDER_MSB_FIRST;
+/**
+ * @brief Read the ID register from TMP117
+ * @param id Pointer to store the read ID
+ * @return NRF_SUCCESS on success, otherwise error code
+ */
+ret_code_t tmp117_read_id(uint16_t *id) {
+    ret_code_t err_code;
+    uint8_t reg_addr = TMP117_REG_DEVICE_ID;
+    uint8_t id_data[2];
 
-    nrfx_spim_init(&spim, &spim_config, spim_event_handler, NULL);
+    // Write register address
+    err_code = nrf_drv_twi_tx(&m_twi, TMP117_I2C_ADDR, &reg_addr, 1, true);
+    if (err_code != NRF_SUCCESS) return err_code;
+
+    // Read 2 bytes from the ID register
+    err_code = nrf_drv_twi_rx(&m_twi, TMP117_I2C_ADDR, id_data, 2);
+    if (err_code != NRF_SUCCESS) return err_code;
+
+    // Convert to 16-bit value (TMP117 uses big-endian format)
+    *id = ((uint16_t)id_data[0] << 8) | id_data[1];
+
+    return NRF_SUCCESS;
 }
 
-void ads1292_wake_up(void)
-{
-    // Activate CS to wake up the device
-    nrf_gpio_pin_clear(PIN_SPI_CS);
-    
-    // Send WAKEUP command (0x02)
-    tx_buf[0] = 0x02;
-    tx_buf[1] = 0x00;  // Dummy byte for the second part of the transfer
 
-    nrfx_spim_xfer_desc_t xfer_desc = NRFX_SPIM_XFER_TRX(tx_buf, SPI_BUFFER_SIZE, rx_buf, SPI_BUFFER_SIZE);
-    nrfx_spim_xfer(&spim, &xfer_desc, 0);
+/**
+ * @brief Read the temperature from TMP117
+ * @param temperature Pointer to store the temperature value in °C
+ * @return NRF_SUCCESS on success, otherwise error code
+ */
+ret_code_t tmp117_read_temperature(float *temperature) {
+    ret_code_t err_code;
+    uint8_t reg_addr = 0x00;  // Temperature register
+    uint8_t temp_data[2];
+    int16_t raw_temp;
 
-    nrf_delay_us(50);  // Delay after wake-up
-    nrf_gpio_pin_set(PIN_SPI_CS);  // De-assert CS
+    // Write register address
+    err_code = nrf_drv_twi_tx(&m_twi, TMP117_I2C_ADDR, &reg_addr, 1, true);
+    if (err_code != NRF_SUCCESS) return err_code;
 
-    // Wait for the ADS1292 to wake up
-    nrf_delay_ms(10);
+    // Read 2 bytes from the temperature register
+    err_code = nrf_drv_twi_rx(&m_twi, TMP117_I2C_ADDR, temp_data, 2);
+    if (err_code != NRF_SUCCESS) return err_code;
+
+    // Convert big-endian data to int16_t
+    raw_temp = ((int16_t)temp_data[0] << 8) | temp_data[1];
+
+    // Convert raw data to Celsius (TMP117 scale factor is 0.0078125 °C/LSB)
+    *temperature = raw_temp * 0.0078125f;
+
+    return NRF_SUCCESS;
 }
 
-void ads1292_read_device_id(void)
-{
-    // Activate chip select (CS)
-    nrf_gpio_pin_clear(PIN_SPI_CS);
 
-    // Prepare the command to read Device ID register (0x20 + register address)
-    tx_buf[0] = 0x20 | ADS1292_REG_ID;  // READ command + register address
-    tx_buf[1] = 0x00;  // Dummy byte to clock out the response
+/**
+ * @brief Main function
+ */
+int main(void) {
+    uint16_t device_id = 0;
 
-    // Perform SPIM transaction
-    nrfx_spim_xfer_desc_t xfer_desc = NRFX_SPIM_XFER_TRX(tx_buf, SPI_BUFFER_SIZE, rx_buf, SPI_BUFFER_SIZE);
-    nrfx_err_t spi_err_code = nrfx_spim_xfer(&spim, &xfer_desc, 0);
+    // Initialize I2C
+    i2c_init();
 
-    if (spi_err_code != NRFX_SUCCESS)
-    {
-      while(true)
-      {
-      }
-    }
-
-    //Register value should be in rx_buf[1]!
-
-    // Wait for a short period (depends on SPI speed)
+    // Small delay to allow the sensor to power up
     nrf_delay_ms(10);
 
-    // Deactivate chip select (CS)
-    nrf_gpio_pin_set(PIN_SPI_CS);
-}
+    // Read TMP117 ID register
+    ret_code_t err = tmp117_read_id(&device_id);
 
-int main(void)
-{
-    // Initialize GPIO for chip select
-    nrf_gpio_cfg_output(PIN_SPI_CS);
-    nrf_gpio_pin_set(PIN_SPI_CS);  // Initially de-assert CS
+    float temp_c = 0;
 
-    //Initialize BIOPOT START pin, which is an output from MCU perspective
-    nrf_gpio_cfg_output(BIOPOT_START);
-    nrf_gpio_pin_clear(BIOPOT_START);
-
-    //Initialize BIOPOT_RESET pin and set it from low to high, activating the ADS1292
-    nrf_gpio_cfg_output(BIOPOT_RESET);
-    //nrf_gpio_pin_clear(BIOPOT_RESET);
-
-    nrf_delay_ms(10);
-    nrf_gpio_pin_set(BIOPOT_RESET);
-    nrf_delay_ms(10);
-
-    nrf_delay_ms(10);
-    nrf_gpio_pin_clear(BIOPOT_RESET);
-
-    nrf_delay_ms(10);
-    nrf_gpio_pin_set(BIOPOT_RESET);
-    
-    nrf_delay_ms(100);
-
-    nrf_gpio_pin_set(BIOPOT_START);
-    nrf_delay_ms(100);
-
-    // Initialize SPIM
-    spim_init();
-    nrf_delay_ms(100);
-
-    //ads1292_wake_up();
-
-    while (true)
-    {
-        // Main loop
-        // Read Device ID from ADS1292
-        ads1292_read_device_id();
-
-        nrf_delay_ms(100);
+    while (1) {
+        // Main loop (can add further functionality here)
+        tmp117_read_temperature(&temp_c);
+        nrf_delay_ms(1000);
     }
 }
