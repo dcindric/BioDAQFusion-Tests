@@ -81,6 +81,44 @@ ret_code_t tmp117_read_temperature(float *temperature) {
     return NRF_SUCCESS;
 }
 
+#define ICP10111_I2C_ADDR     0x63  // ICP-10111 I2C address (default)
+#define ICP10111_CMD_READ_ID  0xEFC8  // Read ID register command
+
+/**
+ * @brief Read the ID register from ICP-10111
+ * @param id Pointer to store the 16-bit ID (bits 5:0 contain the product code)
+ * @return NRF_SUCCESS on success, otherwise error code
+ */
+ret_code_t icp10111_read_id(uint16_t *id) {
+    ret_code_t err_code;
+    uint8_t cmd[2] = { 0xEF, 0xC8 };  // Command to read ID register (0xEFC8)
+    uint8_t id_data[3];  // 16-bit ID + 8-bit CRC
+
+    // Write the read ID command to ICP-10111
+    err_code = nrf_drv_twi_tx(&m_twi, ICP10111_I2C_ADDR, cmd, 2, true);
+    if (err_code != NRF_SUCCESS) {
+        return err_code;
+    }
+
+    // Read 3 bytes (16-bit ID + 8-bit CRC)
+    err_code = nrf_drv_twi_rx(&m_twi, ICP10111_I2C_ADDR, id_data, 3);
+    if (err_code != NRF_SUCCESS) {
+        return err_code;
+    }
+
+    // Combine the 16-bit ID from the first two bytes (bits 15:6 are unspecified)
+    *id = ((uint16_t)id_data[0] << 8) | id_data[1];
+
+    // Optional: You can check the CRC here (id_data[2]) if necessary, but we're ignoring it for now.
+
+    return NRF_SUCCESS;
+}
+
+
+static float temp_c = 0;
+static uint16_t icp1011_id_reg_val = 0;
+
+
 
 /**
  * @brief Main function
@@ -97,11 +135,16 @@ int main(void) {
     // Read TMP117 ID register
     ret_code_t err = tmp117_read_id(&device_id);
 
-    float temp_c = 0;
+    
 
     while (1) {
         // Main loop (can add further functionality here)
         tmp117_read_temperature(&temp_c);
+        nrf_delay_ms(1000);
+
+        icp10111_read_id(&icp1011_id_reg_val);
+        icp1011_id_reg_val = icp1011_id_reg_val &(0b111111); //extract lower 6 bit, the result should be 0x0008.
+
         nrf_delay_ms(1000);
     }
 }
