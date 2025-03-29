@@ -75,29 +75,6 @@ uint8_t ads1292_read_id(void) {
     nrf_gpio_pin_set(ADS1292_CS_PIN); // Deselect ADS1292
     
     return rx_buf[0]; // First byte contains the register value
-
-    //Alternative approach
-    //uint8_t tx_buffer[3];
-    //uint8_t rx_buffer[3] = {0};
-
-    //// Construct Read Register Command
-    //// Format: 001r rrrr (read command + number of registers to read)
-    //tx_buffer[0] = ADS1292_CMD_RREG | 0x01;  // Read 1 register
-    //tx_buffer[1] = ADS1292_REG_ID;           // Start at ID register
-    //tx_buffer[2] = 0x00;                     // Dummy byte for reading
-
-    //// Assert Chip Select
-    //nrf_gpio_pin_clear(ADS1292_CS_PIN);
-
-    //nrfx_spim_xfer_desc_t xfer_desc = NRFX_SPIM_XFER_TRX(tx_buffer, sizeof(tx_buffer), rx_buffer, sizeof(rx_buffer));
-    //nrfx_spim_xfer(&spi, &xfer_desc, 0);
-
-    //// Deassert Chip Select
-    //nrf_gpio_pin_set(ADS1292_CS_PIN);
-
-    //// Return the ID register value (3rd byte in rx_buffer)
-    //return rx_buffer[2];
-
 }
 
 int main(void) {
@@ -110,7 +87,6 @@ int main(void) {
     ads1292_init();
 
     uint8_t id = 0;
-    uint8_t id_v2 = 0;
 
     while(1)
     {
@@ -118,6 +94,6 @@ int main(void) {
 
       nrf_delay_ms(1000);
     }
-    
-    while (1);
+
+    return 0;
 }
