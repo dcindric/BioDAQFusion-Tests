@@ -58,6 +58,17 @@ uint8_t ads1292_read_register(uint8_t reg_addr) {
     return rx_buf[2]; // Third byte contains the register value
 }
 
+
+void ads1292_write_register(uint8_t reg_addr, uint8_t data_to_write)
+{
+    uint8_t tx_buf[3] = { ADS1292_CMD_WREG | reg_addr, 0x00, data_to_write};
+
+    nrf_gpio_pin_clear(ADS1292_CS_PIN); // Select ADS1292
+    nrfx_spim_xfer_desc_t xfer_desc = NRFX_SPIM_XFER_TX(tx_buf, sizeof(tx_buf));
+    nrfx_spim_xfer(&spi, &xfer_desc, 0);
+    nrf_gpio_pin_set(ADS1292_CS_PIN); // Deselect ADS1292
+}
+
 uint8_t ads1292_read_id(void) 
 {
     return ads1292_read_register(ADS1292_REG_ID);
@@ -131,3 +142,5 @@ void ads1292_read_data (void)
     nrf_gpio_pin_set(ADS1292_CS_PIN); // Deselect ADS1292
 
 }
+
+

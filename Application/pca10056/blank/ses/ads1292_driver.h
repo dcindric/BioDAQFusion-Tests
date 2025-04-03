@@ -34,12 +34,17 @@
 
 //SPI commands for ADS1292 control and configuration
 #define ADS1292_CMD_RREG  0x20  // Read Register Command
+#define ADS1292_CMD_WREG  0x40  //Write register command
 #define ADS1292_CMD_SDATAC  0x11  //stop read data continously command
 #define ADS1292_CMD_RDATAC 0x10 //Enable read data continous
 
 void ads1292_init(void);
+
 void ads1292_send_command(uint8_t command);
 uint8_t ads1292_read_register(uint8_t reg_addr);
+void ads1292_write_register(uint8_t reg_addr, uint8_t data_to_write);
+
+
 uint8_t ads1292_read_id(void);
 uint8_t ads1292_read_config1_reg(void);
 uint8_t ads1292_read_config2_reg(void);
@@ -52,4 +57,6 @@ uint8_t ads1292_read_loff_stat_reg (void);
 uint8_t ads1292_read_resp1_reg (void);
 uint8_t ads1292_read_resp2_reg (void);
 uint8_t ads1292_read_gpio_reg(void);
+
+
 void ads1292_read_data (void);
