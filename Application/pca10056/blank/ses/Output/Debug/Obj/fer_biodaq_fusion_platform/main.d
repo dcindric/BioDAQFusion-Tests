@@ -1,5 +1,6 @@
 Output/Debug/Obj/fer_biodaq_fusion_platform/main.o: \
  C:\Users\Dino\Desktop\BioDAQ\ Fusion\Application\main\main.c \
+ ads1292_driver.h \
  ../../../../nRF5_SDK_17.1.0/modules/nrfx/drivers/include/nrfx_spim.h \
  ../../../../nRF5_SDK_17.1.0/modules/nrfx/nrfx.h \
  ../../../../nRF5_SDK_17.1.0/integration/nrfx/nrfx_config.h \

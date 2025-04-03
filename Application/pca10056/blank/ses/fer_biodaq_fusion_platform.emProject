@@ -43,6 +43,12 @@
       project_type="Executable" />
     <configuration Name="Debug" c_user_include_directories="." />
     <folder Name="Application">
+      <folder Name="Drivers">
+        <folder Name="ADS1292">
+          <file file_name="ads1292_driver.c" />
+          <file file_name="ads1292_driver.h" />
+        </folder>
+      </folder>
       <folder Name="components" />
       <folder Name="config">
         <file file_name="../config/app_config.h" />
