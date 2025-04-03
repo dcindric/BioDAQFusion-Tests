@@ -26,8 +26,6 @@
   <ProjectSessionItem path="fer_biodaq_fusion_platform;fer_biodaq_fusion_platform"/>
   <ProjectSessionItem path="fer_biodaq_fusion_platform;fer_biodaq_fusion_platform;Application"/>
   <ProjectSessionItem path="fer_biodaq_fusion_platform;fer_biodaq_fusion_platform;Application;components"/>
-  <ProjectSessionItem path="fer_biodaq_fusion_platform;fer_biodaq_fusion_platform;Application;Drivers"/>
-  <ProjectSessionItem path="fer_biodaq_fusion_platform;fer_biodaq_fusion_platform;Application;Drivers;ADS1292"/>
   <ProjectSessionItem path="fer_biodaq_fusion_platform;fer_biodaq_fusion_platform;Application;main"/>
   <ProjectSessionItem path="fer_biodaq_fusion_platform;fer_biodaq_fusion_platform;Segger Startup Files"/>
  </Project>
@@ -51,9 +49,9 @@
  </TraceWindow>
  <Watch1>
   <Watches active="1" update="Each Second">
-   <Watchpoint expression="rx_buf" name="rx_buf" radix="16" linenumber="251" filename="../../../main/main.c"/>
-   <Watchpoint expression="tx_buf" name="tx_buf" radix="-1" linenumber="81" filename="../../../main/main.c"/>
-   <Watchpoint expression="xfer_desc" name="xfer_desc" radix="-1" linenumber="323" filename="../../../main/main.c"/>
+   <Watchpoint expression="rx_buf" name="rx_buf" radix="16" linenumber="259" filename="../../../main/main.c"/>
+   <Watchpoint expression="tx_buf" name="tx_buf" radix="-1" linenumber="89" filename="../../../main/main.c"/>
+   <Watchpoint expression="xfer_desc" name="xfer_desc" radix="-1" linenumber="28" filename="../../../main/main.c"/>
    <Watchpoint expression="device_id" name="device_id" radix="-1" linenumber="0" filename="../ses"/>
    <Watchpoint expression="temp_c" name="temp_c" radix="-1" linenumber="0" filename="../ses"/>
    <Watchpoint expression="temperature" name="temperature" radix="-1" linenumber="0" filename="../ses"/>
@@ -74,9 +72,7 @@
   <Watches active="0" update="Never"/>
  </Watch4>
  <Files>
-  <SessionOpenFile windowGroup="DockEditLeft" x="19" y="16" useTextEdit="1" openedFrom="C:/Users/Dino/Desktop/BioDAQ Fusion/Application/pca10056/blank/ses/ads1292_driver.c" path="../../../main/main.c" left="0" selected="1" top="6" codecName="Default"/>
-  <SessionOpenFile windowGroup="DockEditLeft" x="27" y="135" useTextEdit="1" path="ads1292_driver.c" left="0" top="117" codecName="Default"/>
-  <SessionOpenFile windowGroup="DockEditLeft" x="0" y="59" useTextEdit="1" openedFrom="C:/Users/Dino/Desktop/BioDAQ Fusion/Application/main/main.c" path="ads1292_driver.h" left="0" top="0" codecName="Default"/>
+  <SessionOpenFile windowGroup="DockEditLeft" x="1" y="8" useTextEdit="1" openedFrom="C:/Users/Dino/Desktop/BioDAQ Fusion/Application/pca10056/blank/ses/ads1292_driver.c" path="../../../main/main.c" left="0" selected="1" top="0" codecName="Default"/>
  </Files>
- <EMStudioWindow activeProject="fer_biodaq_fusion_platform" fileDialogDefaultFilter="*.*" autoConnectTarget="J-Link" buildConfiguration="Debug" sessionSettings="" debugSearchFileMap="" fileDialogInitialDirectory="C:/Users/Dino/Desktop/BioDAQ Fusion/Application/pca10056/blank/config" debugSearchPath="" autoConnectCapabilities="3711"/>
+ <EMStudioWindow activeProject="fer_biodaq_fusion_platform" fileDialogDefaultFilter="*.*" autoConnectTarget="J-Link" buildConfiguration="Debug" sessionSettings="" debugSearchFileMap="" fileDialogInitialDirectory="C:/Users/Dino/Desktop/BioDAQ Fusion/Application/pca10056/blank/config" debugSearchPath="" autoConnectCapabilities="3199"/>
 </session>
