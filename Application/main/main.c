@@ -24,17 +24,24 @@ static const nrfx_spim_t spi = NRFX_SPIM_INSTANCE(SPI_INSTANCE);
 #define ADS1292_REG_ID  0x00  // ID Register Address
 #define ADS1292_REG_CONFIG1 0x01  //CONFIG1 register address
 #define ADS1292_REG_CONFIG2 0x02  //CONFIG2 register address
-
+#define ADS1292_REG_LOFF  0x03
+#define ADS1292_REG_CH1SET  0x04
+#define ADS1292_REG_CH2SET  0x05
+#define ADS1292_REG_RLD_SENS 0x06
+#define ADS1292_REG_LOFF_SENS 0x07
+#define ADS1292_REG_LOFF_STAT 0x08
+#define ADS1292_REG_RESP1 0x09
+#define ADS1292_REG_RESP2 0x0A
 #define ADS1292_REG_GPIO  0x0B  //GPIO register address
 
 //SPI commands for ADS1292 control and configuration
 #define ADS1292_CMD_RREG  0x20  // Read Register Command
 #define ADS1292_CMD_SDATAC  0x11  //stop read data continously command
-
-
+#define ADS1292_CMD_RDATAC 0x10 //Enable read data continous
 
 void ads1292_init(void);
 void ads1292_send_command(uint8_t command);
+
 
 
 
@@ -105,20 +112,74 @@ uint8_t ads1292_read_config2_reg(void) {
     return ads1292_read_register(ADS1292_REG_CONFIG2);
 }
 
+uint8_t ads1292_read_loff_reg (void)
+{
+  return ads1292_read_register(ADS1292_REG_LOFF);
+}
+
+uint8_t ads1292_read_ch1set_reg (void)
+{
+  return ads1292_read_register(ADS1292_REG_CH1SET);
+}
+
+uint8_t ads1292_read_ch2set_reg (void)
+{
+  return ads1292_read_register(ADS1292_REG_CH2SET);
+}
+
+uint8_t ads1292_read_rld_sens_reg (void)
+{
+  return ads1292_read_register(ADS1292_REG_RLD_SENS);
+}
+
+uint8_t ads1292_read_loff_sens_reg (void)
+{
+  return ads1292_read_register(ADS1292_REG_LOFF_SENS);
+}
+
+uint8_t ads1292_read_loff_stat_reg (void)
+{
+  return ads1292_read_register(ADS1292_REG_LOFF_STAT);
+}
+
+uint8_t ads1292_read_resp1_reg (void)
+{
+  return ads1292_read_register(ADS1292_REG_RESP1);
+}
+
+uint8_t ads1292_read_resp2_reg (void)
+{
+  return ads1292_read_register(ADS1292_REG_RESP2);
+}
+
 uint8_t ads1292_read_gpio_reg(void) {
     return ads1292_read_register(ADS1292_REG_GPIO);
 }
 
+
+void ads1292_read_data (void)
+{
+    uint8_t tx_buf[10] = {0}; // Send RREG command, followed by dummy byte
+
+    nrf_gpio_pin_clear(ADS1292_CS_PIN); // Select ADS1292
+    nrfx_spim_xfer_desc_t xfer_desc = NRFX_SPIM_XFER_TX(tx_buf, sizeof(tx_buf));
+
+    nrfx_spim_xfer(&spi, &xfer_desc, 0);
+    nrf_gpio_pin_set(ADS1292_CS_PIN); // Deselect ADS1292
+
+}
 
 
 int main(void) {
 
     nrf_gpio_cfg_output(BIOZ_CS);
     nrf_gpio_cfg_output(LED_DEBUG);
+    nrf_gpio_cfg_output(ADS1292_START_PIN);
 
     //BIOZ_CS should be held high for the whole duration of SPI transaction with ADS1292!
     nrf_gpio_pin_set(BIOZ_CS);
     nrf_gpio_pin_set(LED_DEBUG);
+    nrf_gpio_pin_clear(ADS1292_START_PIN);
     
     ads1292_init();
 
@@ -126,23 +187,61 @@ int main(void) {
     uint8_t config1_reg_def = 0;
     uint8_t config2_reg_def = 0;
     uint8_t gpio_reg_def = 0;
+    uint8_t loff_reg_def = 0;
+    uint8_t ch1set_reg_def = 0;
+    uint8_t ch2set_reg_def = 0;
+    uint8_t rld_sens_reg_def = 0;
+    uint8_t loff_sens_reg_def = 0;
+    uint8_t loff_stat_reg_def = 0;
+    uint8_t resp1_reg_def = 0;
+    uint8_t resp2_reg_def = 0;
+
+    id = ads1292_read_id();
+    nrf_delay_ms(1);
+
+    config1_reg_def = ads1292_read_config1_reg();
+    nrf_delay_ms(1);
+
+    config2_reg_def = ads1292_read_config2_reg();
+    nrf_delay_ms(1);
+
+    loff_reg_def = ads1292_read_loff_reg();
+    nrf_delay_ms(1);
+
+    ch1set_reg_def = ads1292_read_ch1set_reg();
+    nrf_delay_ms(1);
+
+    ch2set_reg_def = ads1292_read_ch2set_reg();
+    nrf_delay_ms(1);
+
+    rld_sens_reg_def = ads1292_read_rld_sens_reg();
+    nrf_delay_ms(1);
+
+    loff_sens_reg_def = ads1292_read_loff_sens_reg();
+    nrf_delay_ms(1);
+
+    loff_stat_reg_def = ads1292_read_loff_stat_reg();
+    nrf_delay_ms(1);
+
+    resp1_reg_def = ads1292_read_resp1_reg();
+    nrf_delay_ms(1);
+
+    resp2_reg_def = ads1292_read_resp2_reg();
+    nrf_delay_ms(1);
+
+    gpio_reg_def = ads1292_read_gpio_reg();
+    nrf_delay_ms(1);
+
+    nrf_delay_ms(1000);
+
+    
+    nrf_gpio_pin_set(ADS1292_START_PIN);
+    ads1292_send_command(ADS1292_CMD_RDATAC);
 
     while(1)
     {
-
-      id = ads1292_read_id();
-      nrf_delay_ms(1);
-
-      config1_reg_def = ads1292_read_config1_reg();
-      nrf_delay_ms(1);
-
-      config2_reg_def = ads1292_read_config2_reg();
-      nrf_delay_ms(1);
-
-      gpio_reg_def = ads1292_read_gpio_reg();
-      nrf_delay_ms(1);
-
-      nrf_delay_ms(500);
+     ads1292_read_data();
+     nrf_delay_ms(1000);
 
     }
 
